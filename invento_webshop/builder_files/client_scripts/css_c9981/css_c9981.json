@@ -1,0 +1,13 @@
+{
+ "creation": "2026-01-31 11:03:30.632542",
+ "docstatus": 0,
+ "doctype": "Builder Client Script",
+ "idx": 23,
+ "modified": "2026-01-31 16:40:14.058767",
+ "modified_by": "Administrator",
+ "name": "CSS-c9981",
+ "owner": "Administrator",
+ "public_url": "/files/page_styles/CSS-c9981-766f5a3527.css?v=d7ff40e14a",
+ "script": "/* Write your CSS here */\n/* Write your CSS here */\n.tab {\n    display: none; \n}\n.tab.active { \n    display: flex; \n}\n.tab-button { \n    cursor: pointer; \n    border: none; \n    background: #f5f5f5; \n}\n.tab-button.active { \n    background: #FFED00; \n}",
+ "script_type": "CSS"
+}

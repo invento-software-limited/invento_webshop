@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2026-01-28 13:54:33.335848",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "topic",
+  "column_break_pgzb",
+  "question",
+  "section_break_ivri",
+  "answer"
+ ],
+ "fields": [
+  {
+   "fieldname": "topic",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Topic",
+   "options": "Finishes Lacquer\nFinishes Hard Wax Oil\nStaining Floors\nSubfloor\nUnder Floor Heating\nFloor Damage\nUnderlay\nRegulations\nMoisture\nFloor Fitting\nAdhesives\nAbrasives\nFillers\nSanding Machines",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_pgzb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "question",
+   "fieldtype": "Data",
+   "label": "Question",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ivri",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "answer",
+   "fieldtype": "Text",
+   "label": "Answer"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-13 15:16:45.996692",
+ "modified_by": "erp_dev@invento.com.bd",
+ "module": "Invento Webshop",
+ "name": "FAQ",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

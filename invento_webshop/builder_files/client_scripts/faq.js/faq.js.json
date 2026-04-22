@@ -1,0 +1,13 @@
+{
+ "creation": "2026-01-28 15:07:28.521439",
+ "docstatus": 0,
+ "doctype": "Builder Client Script",
+ "idx": 12,
+ "modified": "2026-01-28 15:36:00.897685",
+ "modified_by": "Administrator",
+ "name": "faq.js",
+ "owner": "Administrator",
+ "public_url": "/files/page_scripts/JavaScript-2e905-fc3b7a8ced.js?v=a525379c99",
+ "script": "document.addEventListener(\"DOMContentLoaded\", () => {\n  const params = new URLSearchParams(window.location.search);\n  const activeTopic = params.get(\"topic\");\n\n  if (!activeTopic) return;\n\n  const topicLinks = document.querySelectorAll(\n    'a[href^=\"/help-advice?topic=\"]'\n  );\n\n  topicLinks.forEach(link => {\n    const linkTopic = decodeURIComponent(\n      new URL(link.href).searchParams.get(\"topic\")\n    );\n\n    if (linkTopic === activeTopic) {\n      link.classList.add(\"is-active\");\n    } else {\n      link.classList.remove(\"is-active\");\n    }\n  });\n});\n\nconst searchInput = document.querySelector('input[name=\"faq-search\"]');\nconsole.log(searchInput)\nif (searchInput) {\n  searchInput.addEventListener(\"keydown\", (e) => {\n    if (e.key === \"Enter\") {\n      e.preventDefault();\n\n      const value = e.target.value.trim();\n      const params = new URLSearchParams(window.location.search);\n\n      if (value) {\n        params.set(\"search\", value);\n      } else {\n        params.delete(\"search\");\n      }\n\n      window.location.search = params.toString();\n    }\n  });\n}\n\ndocument.getElementById(\"faq-search\").addEventListener(\"click\", () => {\n  const value = searchInput.value.trim();\n  const params = new URLSearchParams(window.location.search);\n\n  if (value) {\n    params.set(\"search\", value);\n  } else {\n    params.delete(\"search\");\n  }\n\n  window.location.search = params.toString();\n});\n",
+ "script_type": "JavaScript"
+}

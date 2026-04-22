@@ -1,0 +1,8 @@
+{
+ "dark_value": null,
+ "doctype": "Builder Variable",
+ "name": "gray-500",
+ "type": "Color",
+ "value": "#999999",
+ "variable_name": "gray-500"
+}

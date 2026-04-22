@@ -1,0 +1,31 @@
+{% extends "templates/web.html" %}
+
+{% block title %} Payment {% endblock %}
+
+{%- block header -%}{% endblock %}
+
+{%- block page_content -%}
+
+<p class='lead text-center centered'>Loading Payment System</p>
+
+<form id="lloyds-connect-form" method="post" action="{{ gateway_url }}">
+	{% for key, value in fields.items() %}
+		<input type="hidden" name="{{ key }}" value="{{ value }}">
+	{% endfor %}
+</form>
+
+<script>
+	frappe.ready(function() {
+		document.getElementById('lloyds-connect-form').submit();
+	});
+</script>
+
+{% endblock %}
+
+{% block style %}
+<style>
+	header, footer {
+		display: none;
+	}
+</style>
+{% endblock %}

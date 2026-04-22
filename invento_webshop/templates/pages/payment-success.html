@@ -1,0 +1,28 @@
+{% extends "templates/web.html" %}
+
+{% block title %} Payment Success {% endblock %}
+
+{%- block page_content -%}
+<div class="text-center">
+	<h3>Payment Successful</h3>
+	{% if redirect_message %}
+		<p>{{ redirect_message }}</p>
+	{% else %}
+		<p>Your payment was successful.</p>
+	{% endif %}
+
+	{% if redirect_to %}
+		<p>Redirecting...</p>
+	{% endif %}
+</div>
+
+{% if redirect_to %}
+<script>
+	frappe.ready(function() {
+		setTimeout(function() {
+			window.location.href = "{{ redirect_to }}";
+		}, 1200);
+	});
+</script>
+{% endif %}
+{%- endblock -%}

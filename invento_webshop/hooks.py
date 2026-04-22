@@ -247,3 +247,37 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+
+doctype_list_js = {
+    "Item": "public/js/item_list.js",
+}
+
+doctype_js = {
+    "Customer": "public/js/customer.js"
+}
+
+override_doctype_class = {
+	"Item": "invento_webshop.hook_functions.item.CustomItem",
+	"Shipping Rule": "invento_webshop.hook_functions.shipping_rule.CustomShippingRule",
+}
+
+
+fixtures = [
+    "Builder Settings"
+]
+
+# Scheduled tasks
+scheduler_events = {
+	"daily": [
+		"invento_webshop.google_business.google_reviews.sync_all_enabled_accounts"
+	]
+}
+
+doc_events = {
+    "Website Download": {
+        "before_save": "invento_webshop.api.website_download.update_file_details"
+    },
+    "Shipping Rule": {
+        "before_save": "invento_webshop.api.shipping.validate_default_rule"
+    }
+}

@@ -1,0 +1,30 @@
+{% extends "templates/web.html" %}
+
+{% block title %} Lloyds Connect Test {% endblock %}
+
+{%- block page_content -%}
+<div class="text-center">
+	<h3>Lloyds Connect Test</h3>
+	<p>This will create/reuse a Payment Request for Sales Order SAL-ORD-2026-00026 and redirect you to the Lloyds hosted payment page.</p>
+	<button class="btn btn-primary" id="start-lloyds-test">Start Test Payment</button>
+</div>
+
+<script>
+	frappe.ready(function() {
+		document.getElementById('start-lloyds-test').addEventListener('click', function() {
+			frappe.call({
+				method: 'invento_webshop.api.sales_order_payment.get_payment_url',
+				args: {
+					sales_order: 'SAL-ORD-2026-00026'
+				},
+				freeze: true,
+				callback: function(r) {
+					if (r.message) {
+						window.location.href = r.message;
+					}
+				}
+			});
+		});
+	});
+</script>
+{%- endblock -%}

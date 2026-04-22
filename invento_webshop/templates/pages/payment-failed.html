@@ -1,0 +1,20 @@
+{% extends "templates/web.html" %}
+
+{% block title %} Payment Failed {% endblock %}
+
+{%- block page_content -%}
+<div class="text-center">
+	<h3>Payment Failed</h3>
+	{% if redirect_message %}
+		<p>{{ redirect_message }}</p>
+	{% else %}
+		<p>Your payment could not be completed.</p>
+	{% endif %}
+
+	{% if redirect_to %}
+		<a class="btn btn-primary" href="{{ redirect_to }}">Continue</a>
+	{% else %}
+		<a class="btn btn-primary" href="/">Continue</a>
+	{% endif %}
+</div>
+{%- endblock -%}
