@@ -10,6 +10,8 @@
  ],
  "fields": [
   {
+   "collapsible": 1,
+   "collapsible_depends_on": "false",
    "fieldname": "webshop_settings_section",
    "fieldtype": "Section Break",
    "label": "Invento Webshop Settings"
@@ -27,7 +29,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2026-04-02 13:00:33.724857",
+ "modified": "2026-04-22 12:37:47.001191",
  "modified_by": "Administrator",
  "module": "Invento Webshop",
  "name": "Webshop Settings",

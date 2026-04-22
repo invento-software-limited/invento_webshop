@@ -259,6 +259,7 @@ doctype_js = {
 override_doctype_class = {
 	"Item": "invento_webshop.hook_functions.item.CustomItem",
 	"Shipping Rule": "invento_webshop.hook_functions.shipping_rule.CustomShippingRule",
+	"Builder Page": "invento_webshop.hook_functions.builder_page.CustomBuilderPage",
 }
 
 
