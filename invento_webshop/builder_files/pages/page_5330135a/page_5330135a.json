@@ -2418,7 +2418,7 @@
                "activeState": null,
                "attributes": {
                 "alt": "Lacquer applied to wooden floor with roller",
-                "src": "/assets/invento_webshop/builder_assets/Lacquer page header.webp"
+                "src": "/assets/invento_webshop/builder_assets/ws_carousel_1.webp"
                },
                "baseStyles": {
                 "borderRadius": "5px",
@@ -2456,7 +2456,7 @@
                "activeState": null,
                "attributes": {
                 "alt": "Lacquer applied to wooden floor with roller",
-                "src": "/assets/invento_webshop/builder_files/assets/imageab0722.webp"
+                "src": "/assets/invento_webshop/builder_assets/ws_carousel_2.webp"
                },
                "baseStyles": {
                 "borderRadius": "5px",
@@ -2479,7 +2479,9 @@
                "classes": [
                 "slide"
                ],
-               "customAttributes": {},
+               "customAttributes": {
+                "data-ws-image": "hero_banner"
+               },
                "dataKey": null,
                "dynamicValues": [],
                "element": "img",
@@ -2499,7 +2501,7 @@
                "activeState": null,
                "attributes": {
                 "alt": "Man glueing wooden floor",
-                "src": "/assets/invento_webshop/builder_assets/man glue.webp"
+                "src": "/assets/invento_webshop/builder_assets/ws_carousel_3.webp"
                },
                "baseStyles": {
                 "borderRadius": "5px",
@@ -25512,14 +25514,14 @@
  "is_standard": 1,
  "is_template": 0,
  "meta_description": "Complete supplies for laying, sanding, and finishing wood floors. Invento is a trusted brand, valued for quality, reliability, and expert support.",
- "modified": "2026-04-22 12:30:34.210849",
+ "modified": "2026-04-22 14:24:35.364010",
  "modified_by": "Administrator",
  "name": "page-5330135a",
  "owner": "sakib@invento.com.bd",
  "page_data_script": "items = frappe.call('invento_webshop.api.item.get_on_sale_items')\nfaqs = frappe.get_all(\n    \"FAQ\",\n    fields=[\"topic\", \"question\", \"answer\"],\n    limit_page_length=5\n)\n\nblogs = frappe.get_all(\n  \"Blog Post\",\n  fields=[\"name\", \"title\", \"blog_category\",\"blogger\", \"route\", \"published_on\", \"blog_intro\", \"meta_image\"]\n)\n\nfor blog in blogs:\n    blog.image = f\"url('{blog.meta_image}')\"\n    \n    if blog.published_on:\n        blog.published_on_formatted = frappe.utils.formatdate(\n            blog.published_on,\n            \"MMMM d, yyyy\"\n        )\n\nreview_stats = frappe.call('invento_webshop.google_business.review_stats.get_review_stats_api')\n\ndata.reviews = review_stats.get('reviews')\ndata.review_text = review_stats.get('summary_text')\ndata.review_svg = review_stats.get('star_svg')\ndata.blogs = blogs\ndata.faqs = faqs\ndata.user = frappe.session.user\ndata.items = items.get('items')\ndata.total_items = 0 if frappe.session.user == \"Guest\" else items.get(\"items_count\")\ndata.include_item_section = data.total_items > 0\ndata.include_reviews_section = len(data.reviews) > 0\ndata.include_blogs_section = len(blogs) > 0\ndata.metatags = {\n    \"og:type\": \"website\"\n}",
  "page_name": "page-5330135a",
  "page_title": "Invento | Quality Wood Flooring Supplies You Can Trust",
- "preview": "/files/page-5330135a-preview.webp?v=19456",
+ "preview": "/files/page-5330135a-preview.webp?v=ba4b9",
  "project_folder": "invento_webshop",
  "published": 1,
  "route": "home"

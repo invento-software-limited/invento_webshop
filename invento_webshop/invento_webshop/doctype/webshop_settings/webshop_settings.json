@@ -6,7 +6,17 @@
  "engine": "InnoDB",
  "field_order": [
   "webshop_settings_section",
-  "default_sales_invoice_pdf_format"
+  "default_sales_invoice_pdf_format",
+  "branding_section",
+  "logo",
+  "carousel_section",
+  "carousel_image_1",
+  "column_break_rqog",
+  "carousel_image_2",
+  "column_break_fafj",
+  "carousel_image_3",
+  "custom_images_section",
+  "custom_images"
  ],
  "fields": [
   {
@@ -23,13 +33,62 @@
    "label": "Default Sales Invoice PDF Format",
    "link_filters": "[[\"Print Format\", \"doc_type\", \"=\", \"Sales Invoice\"]]",
    "options": "Print Format"
+  },
+  {
+   "fieldname": "branding_section",
+   "fieldtype": "Section Break",
+   "label": "Branding"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Logo"
+  },
+  {
+   "fieldname": "carousel_section",
+   "fieldtype": "Section Break",
+   "label": "Hero Carousel Images"
+  },
+  {
+   "fieldname": "carousel_image_1",
+   "fieldtype": "Attach Image",
+   "label": "Carousel Image 1"
+  },
+  {
+   "fieldname": "carousel_image_2",
+   "fieldtype": "Attach Image",
+   "label": "Carousel Image 2"
+  },
+  {
+   "fieldname": "carousel_image_3",
+   "fieldtype": "Attach Image",
+   "label": "Carousel Image 3"
+  },
+  {
+   "fieldname": "custom_images_section",
+   "fieldtype": "Section Break",
+   "label": "Custom Images"
+  },
+  {
+   "fieldname": "custom_images",
+   "fieldtype": "Table",
+   "label": "Custom Images",
+   "options": "Webshop Image Asset"
+  },
+  {
+   "fieldname": "column_break_rqog",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_fafj",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2026-04-22 12:37:47.001191",
+ "modified": "2026-04-22 14:25:25.227365",
  "modified_by": "Administrator",
  "module": "Invento Webshop",
  "name": "Webshop Settings",
