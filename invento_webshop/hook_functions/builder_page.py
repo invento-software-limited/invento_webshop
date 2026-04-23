@@ -22,3 +22,7 @@ class CustomBuilderPage(BuilderPage):
 			super().on_update()
 		finally:
 			builder_utils.copy_file_to_assets = original
+
+	def get_context(self, context):
+		super().get_context(context)
+		context.setdefault("styles", []).append("/ws-colors.css")

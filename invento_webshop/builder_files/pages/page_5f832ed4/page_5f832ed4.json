@@ -1573,7 +1573,7 @@
             "href": "/home"
            },
            "baseStyles": {
-            "color": "rgb(23, 19, 7)",
+            "color": "var(--btn-color)",
             "fontFamily": "IBM Plex Sans",
             "fontSize": "16px",
             "fontWeight": "500",
@@ -1607,7 +1607,7 @@
           {
            "attributes": {},
            "baseStyles": {
-            "borderColor": "rgb(23, 19, 7)",
+            "borderColor": "var(--primary-text-color)",
             "borderStyle": "solid",
             "borderWidth": "1px",
             "height": "0",
@@ -1626,7 +1626,7 @@
            "element": "svg",
            "elementBeforeConversion": null,
            "extendedFromComponent": null,
-           "innerHTML": "<svg width=\"35\" height=\"1\" viewBox=\"0 0 35 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 0.5H35\" stroke=\"#171307\"/>\n</svg>\n",
+           "innerHTML": "<svg width=\"35\" height=\"1\" viewBox=\"0 0 35 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 0.5H35\" style=\"stroke: var(--primary-text-color)\"/>\n</svg>\n",
            "innerText": null,
            "isChildOfComponent": null,
            "isRepeaterBlock": false,
@@ -1634,7 +1634,7 @@
            "originalElement": "__raw_html__",
            "props": {},
            "rawStyles": {
-            "stroke": " #171307",
+            "stroke": "var(--primary-text-color)",
             "strokeWidth": "1px"
            },
            "referenceBlockId": null,
@@ -1644,7 +1644,7 @@
           {
            "attributes": {},
            "baseStyles": {
-            "color": "rgb(23, 19, 7)",
+            "color": "var(--primary-text-color)",
             "fontFamily": "IBM Plex Sans",
             "fontSize": "16px",
             "fontWeight": "500",
@@ -1849,7 +1849,7 @@
           "src": ""
          },
          "baseStyles": {
-          "backgroundColor": "#FFFDF5",
+          "backgroundColor": "var(--light-bg-color)",
           "borderColor": "#e8e8e899",
           "borderRadius": "5px",
           "borderStyle": "solid",
@@ -2007,7 +2007,7 @@
                 {
                  "attributes": {},
                  "baseStyles": {
-                  "color": "#222222",
+                  "color": "var(--primary-text-color)",
                   "fontFamily": "Roboto",
                   "fontSize": "14px",
                   "fontWeight": "400",
@@ -2128,7 +2128,7 @@
                 {
                  "attributes": {},
                  "baseStyles": {
-                  "color": "#222222",
+                  "color": "var(--primary-text-color)",
                   "fontFamily": "Roboto",
                   "fontSize": "14px",
                   "fontWeight": "400",
@@ -2248,7 +2248,7 @@
                 {
                  "attributes": {},
                  "baseStyles": {
-                  "color": "#222222",
+                  "color": "var(--primary-text-color)",
                   "fontFamily": "Open Sans",
                   "fontSize": "14px",
                   "fontWeight": "400",
@@ -2368,7 +2368,7 @@
                 {
                  "attributes": {},
                  "baseStyles": {
-                  "color": "#222222",
+                  "color": "var(--primary-text-color)",
                   "fontFamily": "Open Sans",
                   "fontSize": "14px",
                   "fontWeight": "400",
@@ -2752,7 +2752,7 @@
                   {
                    "attributes": {},
                    "baseStyles": {
-                    "color": "#222222",
+                    "color": "var(--primary-text-color)",
                     "fontFamily": "Roboto",
                     "fontSize": "16px",
                     "fontWeight": "500",
@@ -2823,7 +2823,7 @@
                   {
                    "attributes": {},
                    "baseStyles": {
-                    "color": "#222222",
+                    "color": "var(--primary-text-color)",
                     "fontFamily": "Roboto",
                     "fontSize": "16px",
                     "fontWeight": "500",
@@ -2894,7 +2894,7 @@
                   {
                    "attributes": {},
                    "baseStyles": {
-                    "color": "#222222",
+                    "color": "var(--primary-text-color)",
                     "fontFamily": "Roboto",
                     "fontSize": "16px",
                     "fontWeight": "500",
@@ -2968,7 +2968,7 @@
                   {
                    "attributes": {},
                    "baseStyles": {
-                    "color": "#222222",
+                    "color": "var(--primary-text-color)",
                     "fontFamily": "Roboto",
                     "fontSize": "16px",
                     "fontWeight": "500",
@@ -3045,7 +3045,7 @@
                   {
                    "attributes": {},
                    "baseStyles": {
-                    "color": "#222222",
+                    "color": "var(--primary-text-color)",
                     "display": "flex",
                     "fontFamily": "Roboto",
                     "fontSize": "16px",
@@ -3543,12 +3543,12 @@
                        },
                        "baseStyles": {
                         "alignItems": "center",
-                        "backgroundColor": "#FFED00",
-                        "borderColor": "#F5F5F5",
+                        "backgroundColor": "var(--btn-bg)",
+                        "borderColor": "var(--secondary-bg-color)",
                         "borderRadius": "5px",
                         "borderStyle": "solid",
                         "borderWidth": "1px",
-                        "color": "#000000",
+                        "color": "var(--btn-color)",
                         "display": "flex",
                         "flexDirection": "column",
                         "flexShrink": 0,
@@ -3846,7 +3846,7 @@
                           {
                            "attributes": {},
                            "baseStyles": {
-                            "color": "#222",
+                            "color": "var(--primary-text-color)",
                             "display": "flex",
                             "fontSize": "14px",
                             "fontWeight": "700",
@@ -3933,7 +3933,7 @@
                           {
                            "attributes": {},
                            "baseStyles": {
-                            "color": "#222",
+                            "color": "var(--primary-text-color)",
                             "display": "flex",
                             "fontSize": "14px",
                             "fontWeight": "700",
@@ -4020,7 +4020,7 @@
                           {
                            "attributes": {},
                            "baseStyles": {
-                            "color": "#222",
+                            "color": "var(--primary-text-color)",
                             "display": "flex",
                             "fontSize": "14px",
                             "fontWeight": "700",
@@ -4334,7 +4334,7 @@
                               {
                                "attributes": {},
                                "baseStyles": {
-                                "color": "#222",
+                                "color": "var(--primary-text-color)",
                                 "fontSize": "14px",
                                 "height": "fit-content",
                                 "lineHeight": "1.4",
@@ -4374,7 +4374,7 @@
                               {
                                "attributes": {},
                                "baseStyles": {
-                                "color": "#222",
+                                "color": "var(--primary-text-color)",
                                 "fontSize": "14px",
                                 "fontWeight": "600",
                                 "height": "fit-content",
@@ -4502,7 +4502,7 @@
                               {
                                "attributes": {},
                                "baseStyles": {
-                                "color": "#222",
+                                "color": "var(--primary-text-color)",
                                 "fontSize": "14px",
                                 "height": "fit-content",
                                 "lineHeight": "1.4",
@@ -4629,7 +4629,7 @@
                               {
                                "attributes": {},
                                "baseStyles": {
-                                "color": "#222",
+                                "color": "var(--primary-text-color)",
                                 "fontSize": "14px",
                                 "height": "fit-content",
                                 "lineHeight": "1.4",
@@ -4755,7 +4755,7 @@
                               {
                                "attributes": {},
                                "baseStyles": {
-                                "color": "#222",
+                                "color": "var(--primary-text-color)",
                                 "fontSize": "14px",
                                 "height": "fit-content",
                                 "lineHeight": "1.4",
@@ -4953,7 +4953,7 @@
                             {
                              "attributes": {},
                              "baseStyles": {
-                              "color": "#222",
+                              "color": "var(--primary-text-color)",
                               "fontSize": "14px",
                               "height": "fit-content",
                               "lineHeight": "1.4",
@@ -5077,7 +5077,7 @@
                             {
                              "attributes": {},
                              "baseStyles": {
-                              "color": "#222",
+                              "color": "var(--primary-text-color)",
                               "fontSize": "14px",
                               "fontWeight": "600",
                               "height": "fit-content",
@@ -5275,7 +5275,7 @@
                               {
                                "attributes": {},
                                "baseStyles": {
-                                "color": "#222",
+                                "color": "var(--primary-text-color)",
                                 "fontSize": "14px",
                                 "height": "fit-content",
                                 "lineHeight": "1.4",
@@ -5403,7 +5403,7 @@
                               {
                                "attributes": {},
                                "baseStyles": {
-                                "color": "#222",
+                                "color": "var(--primary-text-color)",
                                 "fontSize": "14px",
                                 "fontWeight": "600",
                                 "height": "fit-content",
@@ -5608,7 +5608,7 @@
                             {
                              "attributes": {},
                              "baseStyles": {
-                              "color": "#222",
+                              "color": "var(--primary-text-color)",
                               "fontSize": "14px",
                               "height": "fit-content",
                               "lineHeight": "1.4",
@@ -5732,7 +5732,7 @@
                             {
                              "attributes": {},
                              "baseStyles": {
-                              "color": "#222",
+                              "color": "var(--primary-text-color)",
                               "fontSize": "14px",
                               "fontWeight": "600",
                               "height": "fit-content",
@@ -5869,7 +5869,7 @@
                          "attributes": {},
                          "baseStyles": {
                           "alignItems": "center",
-                          "backgroundColor": "#8c8300",
+                          "backgroundColor": "var(--btn-bg)",
                           "borderRadius": "5px",
                           "color": "#ffffff",
                           "display": "flex",
@@ -5910,7 +5910,7 @@
                          "props": {},
                          "rawStyles": {
                           "flex-shrink": "0",
-                          "hover:background": "#d5c600",
+                          "hover:background": "var(--primary-color-hover)",
                           "transition": "all 0.1s ease-out"
                          },
                          "referenceBlockId": null,
@@ -5921,9 +5921,9 @@
                          "attributes": {},
                          "baseStyles": {
                           "alignItems": "center",
-                          "backgroundColor": "#FFED00",
+                          "backgroundColor": "var(--btn-bg)",
                           "borderRadius": "5px",
-                          "color": "#000000",
+                          "color": "var(--btn-color)",
                           "display": "flex",
                           "flexDirection": "column",
                           "justifyContent": "flex-start",
@@ -5962,7 +5962,7 @@
                          "props": {},
                          "rawStyles": {
                           "flex-shrink": "0",
-                          "hover:background": "#d5c600",
+                          "hover:background": "var(--primary-color-hover)",
                           "transition": "all 0.1s ease-out"
                          },
                          "referenceBlockId": null,
@@ -5973,9 +5973,9 @@
                          "attributes": {},
                          "baseStyles": {
                           "alignItems": "center",
-                          "backgroundColor": "#FFED00",
+                          "backgroundColor": "var(--btn-bg)",
                           "borderRadius": "5px",
-                          "color": "#000000",
+                          "color": "var(--btn-color)",
                           "display": "flex",
                           "flexDirection": "column",
                           "justifyContent": "flex-start",
@@ -6010,7 +6010,7 @@
                          "props": {},
                          "rawStyles": {
                           "flex-shrink": "0",
-                          "hover:background": "#d5c600",
+                          "hover:background": "var(--primary-color-hover)",
                           "transition": "all 0.1s ease-out"
                          },
                          "referenceBlockId": null,
@@ -6397,7 +6397,7 @@
                   {
                    "attributes": {},
                    "baseStyles": {
-                    "color": "#222222",
+                    "color": "var(--primary-text-color)",
                     "fontFamily": "Roboto",
                     "fontSize": "14px",
                     "fontWeight": "500",
@@ -6433,7 +6433,7 @@
                     "placeholder": "Enter first name"
                    },
                    "baseStyles": {
-                    "backgroundColor": "#F5F5F5",
+                    "backgroundColor": "var(--secondary-bg-color)",
                     "borderColor": "#e8e8e899",
                     "borderRadius": "5px",
                     "borderStyle": "solid",
@@ -6519,7 +6519,7 @@
                   {
                    "attributes": {},
                    "baseStyles": {
-                    "color": "#222222",
+                    "color": "var(--primary-text-color)",
                     "fontFamily": "Roboto",
                     "fontSize": "14px",
                     "fontWeight": "500",
@@ -6555,7 +6555,7 @@
                     "placeholder": "Enter last name"
                    },
                    "baseStyles": {
-                    "backgroundColor": "#F5F5F5",
+                    "backgroundColor": "var(--secondary-bg-color)",
                     "borderColor": "#e8e8e899",
                     "borderRadius": "5px",
                     "borderStyle": "solid",
@@ -6687,7 +6687,7 @@
                   {
                    "attributes": {},
                    "baseStyles": {
-                    "color": "#222222",
+                    "color": "var(--primary-text-color)",
                     "fontFamily": "Roboto",
                     "fontSize": "14px",
                     "fontWeight": "500",
@@ -6724,7 +6724,7 @@
                     "type": "email"
                    },
                    "baseStyles": {
-                    "backgroundColor": "#F5F5F5",
+                    "backgroundColor": "var(--secondary-bg-color)",
                     "borderColor": "#e8e8e899",
                     "borderRadius": "5px",
                     "borderStyle": "solid",
@@ -6811,7 +6811,7 @@
                   {
                    "attributes": {},
                    "baseStyles": {
-                    "color": "#222222",
+                    "color": "var(--primary-text-color)",
                     "fontFamily": "Roboto",
                     "fontSize": "14px",
                     "fontWeight": "500",
@@ -6848,7 +6848,7 @@
                     "type": "tel"
                    },
                    "baseStyles": {
-                    "backgroundColor": "#F5F5F5",
+                    "backgroundColor": "var(--secondary-bg-color)",
                     "borderColor": "#e8e8e899",
                     "borderRadius": "5px",
                     "borderStyle": "solid",
@@ -6976,7 +6976,7 @@
                   {
                    "attributes": {},
                    "baseStyles": {
-                    "color": "#222222",
+                    "color": "var(--primary-text-color)",
                     "fontFamily": "Roboto",
                     "fontSize": "14px",
                     "fontWeight": "500",
@@ -7013,7 +7013,7 @@
                     "type": "tel"
                    },
                    "baseStyles": {
-                    "backgroundColor": "#F5F5F5",
+                    "backgroundColor": "var(--secondary-bg-color)",
                     "borderColor": "#e8e8e899",
                     "borderRadius": "5px",
                     "borderStyle": "solid",
@@ -7165,7 +7165,7 @@
                  "attributes": {},
                  "baseStyles": {
                   "alignItems": "center",
-                  "backgroundColor": "#FFED00",
+                  "backgroundColor": "var(--btn-bg)",
                   "borderRadius": "4px",
                   "display": "flex",
                   "gap": "10px",
@@ -7429,7 +7429,7 @@
                    "attributes": {},
                    "baseStyles": {
                     "__last_display": "flex",
-                    "color": "#222222",
+                    "color": "var(--primary-text-color)",
                     "display": "none",
                     "fontFamily": "Roboto",
                     "fontSize": "14px",
@@ -7465,7 +7465,7 @@
                    "attributes": {},
                    "baseStyles": {
                     "__last_display": "flex",
-                    "color": "#222222",
+                    "color": "var(--primary-text-color)",
                     "display": "none",
                     "fontFamily": "Roboto",
                     "fontSize": "14px",
@@ -7503,7 +7503,7 @@
                     "type": "password"
                    },
                    "baseStyles": {
-                    "backgroundColor": "#F5F5F5",
+                    "backgroundColor": "var(--secondary-bg-color)",
                     "borderColor": "#e8e8e899",
                     "borderRadius": "5px",
                     "borderStyle": "solid",
@@ -7552,7 +7552,7 @@
                     "type": "password"
                    },
                    "baseStyles": {
-                    "backgroundColor": "#F5F5F5",
+                    "backgroundColor": "var(--secondary-bg-color)",
                     "borderColor": "#e8e8e899",
                     "borderRadius": "5px",
                     "borderStyle": "solid",
@@ -7601,7 +7601,7 @@
                     "type": "password"
                    },
                    "baseStyles": {
-                    "backgroundColor": "#F5F5F5",
+                    "backgroundColor": "var(--secondary-bg-color)",
                     "borderColor": "#e8e8e899",
                     "borderRadius": "5px",
                     "borderStyle": "solid",
@@ -7728,7 +7728,7 @@
                       {
                        "attributes": {},
                        "baseStyles": {
-                        "color": "#222",
+                        "color": "var(--primary-text-color)",
                         "fontSize": "14px",
                         "height": "fit-content",
                         "lineHeight": "1.4",
@@ -7868,7 +7868,7 @@
                  "attributes": {},
                  "baseStyles": {
                   "alignItems": "center",
-                  "backgroundColor": "#FFED00",
+                  "backgroundColor": "var(--btn-bg)",
                   "borderRadius": "4px",
                   "display": "flex",
                   "gap": "10px",
@@ -8091,7 +8091,7 @@
                "attributes": {},
                "baseStyles": {
                 "alignItems": "center",
-                "backgroundColor": "#FFED00",
+                "backgroundColor": "var(--btn-bg)",
                 "borderRadius": "4px",
                 "display": "flex",
                 "gap": "10px",
@@ -8251,7 +8251,7 @@
                     {
                      "attributes": {},
                      "baseStyles": {
-                      "color": "#222222",
+                      "color": "var(--primary-text-color)",
                       "fontFamily": "Roboto",
                       "fontSize": "17px",
                       "fontWeight": "700",
@@ -8380,7 +8380,7 @@
                     {
                      "attributes": {},
                      "baseStyles": {
-                      "backgroundColor": "#FFFDF5",
+                      "backgroundColor": "var(--light-bg-color)",
                       "display": "flex",
                       "flexDirection": "row",
                       "flexShrink": 0,
@@ -9125,7 +9125,7 @@
                           "borderRadius": "4px",
                           "borderStyle": "solid",
                           "borderWidth": "1px",
-                          "color": "#222",
+                          "color": "var(--primary-text-color)",
                           "fontFamily": "Roboto",
                           "fontSize": "15px",
                           "fontWeight": "500",
@@ -9193,7 +9193,7 @@
                        "attributes": {},
                        "baseStyles": {
                         "alignItems": "center",
-                        "backgroundColor": "#FFED00",
+                        "backgroundColor": "var(--btn-bg)",
                         "borderRadius": "4px",
                         "display": "flex",
                         "gap": "10px",
@@ -9352,7 +9352,7 @@
                   {
                    "attributes": {},
                    "baseStyles": {
-                    "color": "#222222",
+                    "color": "var(--primary-text-color)",
                     "fontFamily": "Roboto",
                     "fontSize": "14px",
                     "fontWeight": "400",
@@ -9483,7 +9483,7 @@
                     {
                      "attributes": {},
                      "baseStyles": {
-                      "color": "#222222",
+                      "color": "var(--primary-text-color)",
                       "fontFamily": "Roboto",
                       "fontSize": "17px",
                       "fontWeight": "700",
@@ -9609,7 +9609,7 @@
                     {
                      "attributes": {},
                      "baseStyles": {
-                      "backgroundColor": "#FFFDF5",
+                      "backgroundColor": "var(--light-bg-color)",
                       "display": "flex",
                       "flexDirection": "row",
                       "flexShrink": 0,
@@ -10355,7 +10355,7 @@
                           "borderRadius": "4px",
                           "borderStyle": "solid",
                           "borderWidth": "1px",
-                          "color": "#222",
+                          "color": "var(--primary-text-color)",
                           "fontFamily": "Roboto",
                           "fontSize": "15px",
                           "fontWeight": "500",
@@ -10423,7 +10423,7 @@
                        "attributes": {},
                        "baseStyles": {
                         "alignItems": "center",
-                        "backgroundColor": "#FFED00",
+                        "backgroundColor": "var(--btn-bg)",
                         "borderRadius": "4px",
                         "display": "flex",
                         "gap": "10px",
@@ -10582,7 +10582,7 @@
                   {
                    "attributes": {},
                    "baseStyles": {
-                    "color": "#222222",
+                    "color": "var(--primary-text-color)",
                     "fontFamily": "Roboto",
                     "fontSize": "14px",
                     "fontWeight": "400",
@@ -10843,7 +10843,7 @@
                     {
                      "attributes": {},
                      "baseStyles": {
-                      "color": "#222222",
+                      "color": "var(--primary-text-color)",
                       "fontFamily": "Roboto",
                       "fontSize": "14px",
                       "fontWeight": "500",
@@ -10912,7 +10912,7 @@
                           "placeholder": "Enter Town/City"
                          },
                          "baseStyles": {
-                          "backgroundColor": "#F5F5F5",
+                          "backgroundColor": "var(--secondary-bg-color)",
                           "borderColor": "#e8e8e899",
                           "borderRadius": "5px",
                           "borderStyle": "solid",
@@ -11002,7 +11002,7 @@
                      "originalElement": null,
                      "props": {},
                      "rawStyles": {
-                      "background-color": "#F5F5F5"
+                      "background-color": "var(--secondary-bg-color)"
                      },
                      "referenceBlockId": null,
                      "tabletStyles": {},
@@ -11049,7 +11049,7 @@
                       "borderColor": "#e8e8e899",
                       "borderStyle": "solid",
                       "borderWidth": "0px 0px 1px 0px",
-                      "color": "#222222",
+                      "color": "var(--primary-text-color)",
                       "fontFamily": "Roboto",
                       "fontSize": "17px",
                       "fontWeight": "700",
@@ -11165,7 +11165,7 @@
                     {
                      "attributes": {},
                      "baseStyles": {
-                      "color": "#222222",
+                      "color": "var(--primary-text-color)",
                       "fontFamily": "Roboto",
                       "fontSize": "14px",
                       "fontWeight": "500",
@@ -11201,7 +11201,7 @@
                       "placeholder": "Enter address"
                      },
                      "baseStyles": {
-                      "backgroundColor": "#F5F5F5",
+                      "backgroundColor": "var(--secondary-bg-color)",
                       "borderColor": "#e8e8e899",
                       "borderRadius": "5px",
                       "borderStyle": "solid",
@@ -11284,7 +11284,7 @@
                     {
                      "attributes": {},
                      "baseStyles": {
-                      "color": "#222222",
+                      "color": "var(--primary-text-color)",
                       "fontFamily": "Roboto",
                       "fontSize": "14px",
                       "fontWeight": "500",
@@ -11320,7 +11320,7 @@
                       "placeholder": "Enter address"
                      },
                      "baseStyles": {
-                      "backgroundColor": "#F5F5F5",
+                      "backgroundColor": "var(--secondary-bg-color)",
                       "borderColor": "#e8e8e899",
                       "borderRadius": "5px",
                       "borderStyle": "solid",
@@ -11400,7 +11400,7 @@
                     {
                      "attributes": {},
                      "baseStyles": {
-                      "color": "#222222",
+                      "color": "var(--primary-text-color)",
                       "fontFamily": "Roboto",
                       "fontSize": "14px",
                       "fontWeight": "500",
@@ -11436,7 +11436,7 @@
                       "placeholder": "Enter Town/City"
                      },
                      "baseStyles": {
-                      "backgroundColor": "#F5F5F5",
+                      "backgroundColor": "var(--secondary-bg-color)",
                       "borderColor": "#e8e8e899",
                       "borderRadius": "5px",
                       "borderStyle": "solid",
@@ -11563,7 +11563,7 @@
                     {
                      "attributes": {},
                      "baseStyles": {
-                      "color": "#222222",
+                      "color": "var(--primary-text-color)",
                       "fontFamily": "Roboto",
                       "fontSize": "14px",
                       "fontWeight": "500",
@@ -11726,7 +11726,7 @@
                      "originalElement": null,
                      "props": {},
                      "rawStyles": {
-                      "background-color": "#F5F5F5"
+                      "background-color": "var(--secondary-bg-color)"
                      },
                      "referenceBlockId": null,
                      "tabletStyles": {},
@@ -11770,7 +11770,7 @@
                     {
                      "attributes": {},
                      "baseStyles": {
-                      "color": "#222222",
+                      "color": "var(--primary-text-color)",
                       "fontFamily": "Roboto",
                       "fontSize": "14px",
                       "fontWeight": "500",
@@ -11807,7 +11807,7 @@
                       "type": "text"
                      },
                      "baseStyles": {
-                      "backgroundColor": "#F5F5F5",
+                      "backgroundColor": "var(--secondary-bg-color)",
                       "borderColor": "#e8e8e899",
                       "borderRadius": "5px",
                       "borderStyle": "solid",
@@ -11890,7 +11890,7 @@
                     {
                      "attributes": {},
                      "baseStyles": {
-                      "color": "#222222",
+                      "color": "var(--primary-text-color)",
                       "fontFamily": "Roboto",
                       "fontSize": "14px",
                       "fontWeight": "500",
@@ -11927,7 +11927,7 @@
                       "type": "tel"
                      },
                      "baseStyles": {
-                      "backgroundColor": "#F5F5F5",
+                      "backgroundColor": "var(--secondary-bg-color)",
                       "borderColor": "#e8e8e899",
                       "borderRadius": "5px",
                       "borderStyle": "solid",
@@ -12009,7 +12009,7 @@
                     {
                      "attributes": {},
                      "baseStyles": {
-                      "color": "#222222",
+                      "color": "var(--primary-text-color)",
                       "fontFamily": "Roboto",
                       "fontSize": "14px",
                       "fontWeight": "500",
@@ -12046,7 +12046,7 @@
                       "type": "text"
                      },
                      "baseStyles": {
-                      "backgroundColor": "#F5F5F5",
+                      "backgroundColor": "var(--secondary-bg-color)",
                       "borderColor": "#e8e8e899",
                       "borderRadius": "5px",
                       "borderStyle": "solid",
@@ -12171,7 +12171,7 @@
                     {
                      "attributes": {},
                      "baseStyles": {
-                      "color": "#222222",
+                      "color": "var(--primary-text-color)",
                       "fontFamily": "Roboto",
                       "fontSize": "14px",
                       "fontWeight": "500",
@@ -12208,7 +12208,7 @@
                       "type": "tel"
                      },
                      "baseStyles": {
-                      "backgroundColor": "#F5F5F5",
+                      "backgroundColor": "var(--secondary-bg-color)",
                       "borderColor": "#e8e8e899",
                       "borderRadius": "5px",
                       "borderStyle": "solid",
@@ -12393,7 +12393,7 @@
                    "attributes": {},
                    "baseStyles": {
                     "alignItems": "center",
-                    "backgroundColor": "#FFED00",
+                    "backgroundColor": "var(--btn-bg)",
                     "borderRadius": "4px",
                     "display": "flex",
                     "gap": "10px",
@@ -17185,7 +17185,7 @@
  "idx": 0,
  "is_standard": 1,
  "is_template": 0,
- "modified": "2026-04-22 14:21:22.345430",
+ "modified": "2026-04-22 17:57:42.076375",
  "modified_by": "Administrator",
  "name": "page-5f832ed4",
  "owner": "Administrator",

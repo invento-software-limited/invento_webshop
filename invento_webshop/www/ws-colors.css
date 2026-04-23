@@ -1,0 +1,15 @@
+:root {
+  --primary-color: {{ primary_color }};
+  --primary-color-hover: {{ primary_color_hover }};
+  --primary-color-light: {{ primary_color_light }};
+  --primary-color-faint: {{ primary_color_faint }};
+  --primary-text-color: {{ primary_text_color }};
+  --primary-text-hover: {{ primary_text_hover }};
+  --light-bg-color: {{ light_bg_color }};
+  --warm-bg-color: {{ warm_bg_color }};
+  --secondary-bg-color: {{ secondary_bg_color }};
+  --btn-color: {{ btn_color }};
+  --btn-bg: {{ btn_bg_color }};
+  --btn-hover-color: {{ btn_hover_color }};
+  --btn-hover-bg: {{ btn_hover_bg_color }};
+}

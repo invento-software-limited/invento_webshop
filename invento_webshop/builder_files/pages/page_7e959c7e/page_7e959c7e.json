@@ -1581,7 +1581,7 @@
             "href": "/home"
            },
            "baseStyles": {
-            "color": "rgb(23, 19, 7)",
+            "color": "var(--btn-color)",
             "fontFamily": "IBM Plex Sans",
             "fontSize": "16px",
             "fontWeight": "500",
@@ -1615,7 +1615,7 @@
           {
            "attributes": {},
            "baseStyles": {
-            "borderColor": "rgb(23, 19, 7)",
+            "borderColor": "var(--primary-text-color)",
             "borderStyle": "solid",
             "borderWidth": "1px",
             "height": "0",
@@ -1634,7 +1634,7 @@
            "element": "svg",
            "elementBeforeConversion": null,
            "extendedFromComponent": null,
-           "innerHTML": "<svg width=\"35\" height=\"1\" viewBox=\"0 0 35 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 0.5H35\" stroke=\"#171307\"/>\n</svg>\n",
+           "innerHTML": "<svg width=\"35\" height=\"1\" viewBox=\"0 0 35 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 0.5H35\" style=\"stroke: var(--primary-text-color)\"/>\n</svg>\n",
            "innerText": null,
            "isChildOfComponent": null,
            "isRepeaterBlock": false,
@@ -1642,7 +1642,7 @@
            "originalElement": "__raw_html__",
            "props": {},
            "rawStyles": {
-            "stroke": " #171307",
+            "stroke": "var(--primary-text-color)",
             "strokeWidth": "1px"
            },
            "referenceBlockId": null,
@@ -1652,7 +1652,7 @@
           {
            "attributes": {},
            "baseStyles": {
-            "color": "rgb(23, 19, 7)",
+            "color": "var(--primary-text-color)",
             "fontFamily": "IBM Plex Sans",
             "fontSize": "16px",
             "fontWeight": "500",
@@ -1794,7 +1794,7 @@
          "attributes": {},
          "baseStyles": {
           "alignItems": "center",
-          "backgroundColor": "rgb(255, 253, 245)",
+          "backgroundColor": "var(--light-bg-color)",
           "borderRadius": "5px",
           "display": "flex",
           "gap": "10px",
@@ -2496,7 +2496,7 @@
              "baseStyles": {
               "alignItems": "center",
               "alignSelf": "stretch",
-              "backgroundColor": "rgb(255, 237, 0)",
+              "backgroundColor": "var(--btn-bg)",
               "borderRadius": "5px",
               "display": "flex",
               "gap": "10px",
@@ -2513,7 +2513,7 @@
               {
                "attributes": {},
                "baseStyles": {
-                "color": "rgb(23, 19, 7)",
+                "color": "var(--btn-color)",
                 "fontFamily": "IBM Plex Sans",
                 "fontSize": "16px",
                 "fontWeight": "500",
@@ -2676,7 +2676,7 @@
          "attributes": {},
          "baseStyles": {
           "alignItems": "center",
-          "backgroundColor": "#fffdf5",
+          "backgroundColor": "var(--light-bg-color)",
           "borderRadius": "15px",
           "boxShadow": "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px",
           "display": "flex",
@@ -2929,7 +2929,7 @@
          "attributes": {},
          "baseStyles": {
           "alignItems": "center",
-          "backgroundColor": "#fffdf5",
+          "backgroundColor": "var(--light-bg-color)",
           "borderRadius": "15px",
           "boxShadow": "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px",
           "display": "flex",
@@ -3044,7 +3044,7 @@
               {
                "attributes": {},
                "baseStyles": {
-                "color": "rgb(0, 0, 0)",
+                "color": "var(--btn-color)",
                 "fontFamily": "IBM Plex Sans",
                 "fontSize": "17px",
                 "fontWeight": "400",
@@ -3146,7 +3146,7 @@
               {
                "attributes": {},
                "baseStyles": {
-                "color": "rgb(0, 0, 0)",
+                "color": "var(--btn-color)",
                 "fontFamily": "IBM Plex Sans",
                 "fontSize": "17px",
                 "fontWeight": "400",
@@ -3250,7 +3250,7 @@
          "attributes": {},
          "baseStyles": {
           "alignItems": "center",
-          "backgroundColor": "#fffdf5",
+          "backgroundColor": "var(--light-bg-color)",
           "borderRadius": "15px",
           "boxShadow": "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px",
           "display": "flex",
@@ -8330,7 +8330,7 @@
  "idx": 0,
  "is_standard": 1,
  "is_template": 0,
- "modified": "2026-04-22 14:21:25.418341",
+ "modified": "2026-04-22 17:57:39.587128",
  "modified_by": "Administrator",
  "name": "page-7e959c7e",
  "owner": "Administrator",

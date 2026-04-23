@@ -3,11 +3,11 @@
  "docstatus": 0,
  "doctype": "Builder Client Script",
  "idx": 31,
- "modified": "2026-01-26 10:54:58.659762",
+ "modified": "2026-04-22 21:30:00",
  "modified_by": "Administrator",
  "name": "profile.css",
  "owner": "Administrator",
  "public_url": "/files/page_styles/CSS-bb45b-1f27ee134a.css?v=3710562871",
- "script": "/* Write your CSS here */\n.tab {\n    display: none; \n}\n.tab.active { \n    display: block;\n}\n.tabs { \n    display: flex; \n    justify-content: space-around; \n    margin-bottom: 20px; \n}\n.tab-button { \n    cursor: pointer; \n    border: none; \n    border-radius: 10px;\n    padding: 5px;\n}\n.tab-button.active {\n  background-color: #FFEB99;\n}\n\n.tab-button.active .__text_block__{\n    font-weight: 700;\n}",
+ "script": "/* Write your CSS here */\n.tab {\n    display: none; \n}\n.tab.active { \n    display: block;\n}\n.tabs { \n    display: flex; \n    justify-content: space-around; \n    margin-bottom: 20px; \n}\n.tab-button { \n    cursor: pointer; \n    border: none; \n    border-radius: 10px;\n    padding: 5px;\n}\n.tab-button.active {\n  background-color: var(--primary-color-faint);\n}\n\n.tab-button.active .__text_block__{\n    font-weight: 700;\n}",
  "script_type": "CSS"
 }

@@ -4,6 +4,18 @@ from erpnext.utilities.product import get_price
 from erpnext.stock.utils import get_stock_balance
 from invento_webshop.webshop_functions.cart import get_party
 
+
+def _can_see_price():
+	"""Return True if the current user is allowed to see prices."""
+	if frappe.session.user != "Guest":
+		return True
+	cached = frappe.cache.get_value("ws-price-settings")
+	if cached is not None:
+		return cached
+	result = bool(cint(frappe.db.get_single_value("Webshop Settings", "show_price_for_guest")))
+	frappe.cache.set_value("ws-price-settings", result, expires_in_sec=300)
+	return result
+
 @frappe.whitelist(allow_guest=True)
 def get_filtered_items(filters=None):
 	"""
@@ -249,14 +261,14 @@ class ProductQuery:
 		"""Attach price and stock info to the item."""
 		item.formatted_price = 0
 		item.price_list_rate = 0
-		
-		if frappe.session.user != "Guest":
+
+		if _can_see_price():
 			if item.has_variants:
 				variants = frappe.db.get_all("Item", filters={"variant_of": item.item_code, "disabled": 0}, pluck="name")
 				if variants:
 					min_price = float('inf')
 					cheapest_variant_details = None
-					
+
 					for variant in variants:
 						price_details = get_price(
 							item_code=variant,
@@ -285,11 +297,11 @@ class ProductQuery:
 					party=self.settings.party,
 					qty=1
 				)
-				
+
 				if price_details:
 					item.price_list_rate = price_details.get("price_list_rate")
 					item.discount_percent = price_details.get("discount_percentage", 0)
-					
+
 					rate = price_details.get("rate") or price_details.get("price_list_rate")
 					item.formatted_price = f"{frappe.format_value(rate, dict(fieldtype='Currency'), doc=price_details)} per {item.stock_uom}"
 

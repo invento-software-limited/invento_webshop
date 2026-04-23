@@ -1,5 +1,7 @@
 import frappe
 
+no_cache = 1
+
 COLOR_DEFAULTS = {
 	"primary_color": "#FFED00",
 	"primary_color_hover": "#D5C600",
@@ -17,17 +19,7 @@ COLOR_DEFAULTS = {
 }
 
 
-@frappe.whitelist()
-def reset_colors():
-	settings = frappe.get_doc("Webshop Settings", "Webshop Settings")
+def get_context(context):
+	settings = frappe.get_cached_doc("Webshop Settings", "Webshop Settings")
 	for field, default in COLOR_DEFAULTS.items():
-		settings.set(field, default)
-	settings.save()
-	frappe.db.commit()
-
-
-@frappe.whitelist()
-def clear_all_cache():
-	frappe.clear_cache()
-	from frappe.website.utils import clear_cache
-	clear_cache()
+		context[field] = settings.get(field) or default

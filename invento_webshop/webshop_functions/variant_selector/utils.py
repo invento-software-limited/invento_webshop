@@ -6,6 +6,7 @@ from invento_webshop.webshop_functions.variant_selector.item_variants_cache impo
 )
 from erpnext.utilities.product import get_price
 from invento_webshop.webshop_functions.cart import get_party
+from invento_webshop.webshop_functions.items import _can_see_price
 
 
 def get_item_codes_by_attributes(attribute_filters, template_item_code=None):
@@ -125,7 +126,7 @@ def get_attributes_and_values(item_code):
                 current_min = float('inf')
                 found_price = False
 
-                if frappe.session.user != "Guest":
+                if _can_see_price():
                     for variant_code in items_with_val:
                         price_details = get_price(
                             item_code=variant_code,
@@ -141,7 +142,6 @@ def get_attributes_and_values(item_code):
                             if rate < current_min:
                                 current_min = rate
                                 min_price = rate
-                                # Keep one formatted price example (usually from the cheapest)
                                 stock_uom = frappe.db.get_value("Item", item_code, "stock_uom")
                                 formatted_price = frappe.format_value(rate, dict(fieldtype="Currency"), doc=price_details) + ' per ' + stock_uom
                                 found_price = True

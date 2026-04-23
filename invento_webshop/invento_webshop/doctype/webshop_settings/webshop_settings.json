@@ -7,8 +7,42 @@
  "field_order": [
   "webshop_settings_section",
   "default_sales_invoice_pdf_format",
+  "pricing_section",
+  "show_price_for_guest",
   "branding_section",
   "logo",
+  "theme_section",
+  "theme_primary",
+  "column_break_theme",
+  "theme_text",
+  "column_break_theme2",
+  "theme_bg",
+  "button_colors_section",
+  "btn_color",
+  "column_break_btn",
+  "btn_bg_color",
+  "column_break_btn2",
+  "btn_hover_color",
+  "column_break_btn3",
+  "btn_hover_bg_color",
+  "colors_section",
+  "primary_color",
+  "column_break_colors",
+  "primary_color_hover",
+  "column_break_colors2",
+  "primary_color_light",
+  "column_break_colors3",
+  "primary_color_faint",
+  "text_colors_section",
+  "primary_text_color",
+  "column_break_text",
+  "primary_text_hover",
+  "bg_colors_section",
+  "light_bg_color",
+  "column_break_bg",
+  "warm_bg_color",
+  "column_break_bg2",
+  "secondary_bg_color",
   "carousel_section",
   "carousel_image_1",
   "column_break_rqog",
@@ -35,6 +69,18 @@
    "options": "Print Format"
   },
   {
+   "fieldname": "pricing_section",
+   "fieldtype": "Section Break",
+   "label": "Pricing"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_price_for_guest",
+   "fieldtype": "Check",
+   "label": "Show Price for Guest User",
+   "description": "If checked, item prices and variant prices are visible to non-logged-in users"
+  },
+  {
    "fieldname": "branding_section",
    "fieldtype": "Section Break",
    "label": "Branding"
@@ -43,6 +89,185 @@
    "fieldname": "logo",
    "fieldtype": "Attach Image",
    "label": "Logo"
+  },
+  {
+   "fieldname": "theme_section",
+   "fieldtype": "Section Break",
+   "label": "Theme Colors",
+   "description": "Optional — set these 3 base colors to auto-generate all brand, text and background colors below. Leave blank to keep existing colors."
+  },
+  {
+   "fieldname": "theme_primary",
+   "fieldtype": "Color",
+   "label": "Primary / Brand Color",
+   "description": "Derives: Primary Color, Hover, Light, Faint"
+  },
+  {
+   "fieldname": "column_break_theme",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "theme_text",
+   "fieldtype": "Color",
+   "label": "Text Color",
+   "description": "Derives: Primary Text, Text Hover"
+  },
+  {
+   "fieldname": "column_break_theme2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "theme_bg",
+   "fieldtype": "Color",
+   "label": "Background Color",
+   "description": "Derives: Light BG, Warm BG, Secondary BG"
+  },
+  {
+   "fieldname": "button_colors_section",
+   "fieldtype": "Section Break",
+   "label": "Button Colors"
+  },
+  {
+   "default": "#171307",
+   "fieldname": "btn_color",
+   "fieldtype": "Color",
+   "label": "Button Text Color",
+   "description": "Text color on buttons"
+  },
+  {
+   "fieldname": "column_break_btn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "#FFED00",
+   "fieldname": "btn_bg_color",
+   "fieldtype": "Color",
+   "label": "Button Background Color",
+   "description": "Background color of buttons"
+  },
+  {
+   "fieldname": "column_break_btn2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "#FFFFFF",
+   "fieldname": "btn_hover_color",
+   "fieldtype": "Color",
+   "label": "Button Hover Text Color",
+   "description": "Text color on button hover"
+  },
+  {
+   "fieldname": "column_break_btn3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "#D5C600",
+   "fieldname": "btn_hover_bg_color",
+   "fieldtype": "Color",
+   "label": "Button Hover Background Color",
+   "description": "Background color on button hover"
+  },
+  {
+   "fieldname": "colors_section",
+   "fieldtype": "Section Break",
+   "label": "Brand Colors"
+  },
+  {
+   "fieldname": "primary_color",
+   "fieldtype": "Color",
+   "label": "Primary Color",
+   "default": "#FFED00",
+   "description": "Main accent — buttons, highlights"
+  },
+  {
+   "fieldname": "column_break_colors",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "primary_color_hover",
+   "fieldtype": "Color",
+   "label": "Primary Hover (Dark)",
+   "default": "#D5C600",
+   "description": "Darker shade for hover/active states"
+  },
+  {
+   "fieldname": "column_break_colors2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "primary_color_light",
+   "fieldtype": "Color",
+   "label": "Primary Hover (Light)",
+   "default": "#FFF465",
+   "description": "Lighter shade for hover tints"
+  },
+  {
+   "fieldname": "column_break_colors3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "primary_color_faint",
+   "fieldtype": "Color",
+   "label": "Primary Faint (Background)",
+   "default": "#FFFBC5",
+   "description": "Very light primary tint for backgrounds"
+  },
+  {
+   "fieldname": "text_colors_section",
+   "fieldtype": "Section Break",
+   "label": "Text Colors"
+  },
+  {
+   "fieldname": "primary_text_color",
+   "fieldtype": "Color",
+   "label": "Primary Text",
+   "default": "#171307",
+   "description": "Main dark text and elements"
+  },
+  {
+   "fieldname": "column_break_text",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "primary_text_hover",
+   "fieldtype": "Color",
+   "label": "Text Hover",
+   "default": "#52504C",
+   "description": "Text color on hover states"
+  },
+  {
+   "fieldname": "bg_colors_section",
+   "fieldtype": "Section Break",
+   "label": "Background Colors"
+  },
+  {
+   "fieldname": "light_bg_color",
+   "fieldtype": "Color",
+   "label": "Light Background",
+   "default": "#FFFDF5",
+   "description": "Cream/light background sections"
+  },
+  {
+   "fieldname": "column_break_bg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "warm_bg_color",
+   "fieldtype": "Color",
+   "label": "Warm Background",
+   "default": "#F8F6DF",
+   "description": "Warm cream background sections"
+  },
+  {
+   "fieldname": "column_break_bg2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "secondary_bg_color",
+   "fieldtype": "Color",
+   "label": "Secondary Background",
+   "default": "#F5F5F5",
+   "description": "Light gray background sections"
   },
   {
    "fieldname": "carousel_section",
@@ -88,7 +313,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2026-04-22 14:25:25.227365",
+ "modified": "2026-04-22 20:00:00.000000",
  "modified_by": "Administrator",
  "module": "Invento Webshop",
  "name": "Webshop Settings",

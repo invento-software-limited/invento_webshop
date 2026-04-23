@@ -1545,7 +1545,7 @@
           "href": "/home"
          },
          "baseStyles": {
-          "color": "rgb(23, 19, 7)",
+          "color": "var(--btn-color)",
           "fontFamily": "IBM Plex Sans",
           "fontSize": "16px",
           "fontWeight": "500",
@@ -1579,7 +1579,7 @@
         {
          "attributes": {},
          "baseStyles": {
-          "borderColor": "rgb(23, 19, 7)",
+          "borderColor": "var(--primary-text-color)",
           "borderStyle": "solid",
           "borderWidth": "1px",
           "height": "0",
@@ -1598,7 +1598,7 @@
          "element": "svg",
          "elementBeforeConversion": null,
          "extendedFromComponent": null,
-         "innerHTML": "<svg width=\"35\" height=\"1\" viewBox=\"0 0 35 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 0.5H35\" stroke=\"#171307\"/>\n</svg>\n",
+         "innerHTML": "<svg width=\"35\" height=\"1\" viewBox=\"0 0 35 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 0.5H35\" style=\"stroke: var(--primary-text-color)\"/>\n</svg>\n",
          "innerText": null,
          "isChildOfComponent": null,
          "isRepeaterBlock": false,
@@ -1606,7 +1606,7 @@
          "originalElement": "__raw_html__",
          "props": {},
          "rawStyles": {
-          "stroke": " #171307",
+          "stroke": "var(--primary-text-color)",
           "strokeWidth": "1px"
          },
          "referenceBlockId": null,
@@ -1616,7 +1616,7 @@
         {
          "attributes": {},
          "baseStyles": {
-          "color": "rgb(23, 19, 7)",
+          "color": "var(--primary-text-color)",
           "fontFamily": "IBM Plex Sans",
           "fontSize": "16px",
           "fontWeight": "500",
@@ -1831,7 +1831,7 @@
              "element": "svg",
              "elementBeforeConversion": null,
              "extendedFromComponent": null,
-             "innerHTML": "<svg width=\"50\" height=\"50\" viewBox=\"0 0 73 73\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect width=\"72.7028\" height=\"72.7028\" rx=\"36.3514\" fill=\"#FFED00\"/>\n<path d=\"M50.2082 49.9555L43.4922 43.2395M43.4922 43.2395C45.7434 40.9883 47.0082 37.935 47.0082 34.7514C47.0082 31.5677 45.7434 28.5144 43.4922 26.2632C41.241 24.012 38.1878 22.7473 35.0041 22.7473C31.8204 22.7473 28.7671 24.012 26.5159 26.2632C24.2647 28.5144 23 31.5677 23 34.7514C23 37.935 24.2647 40.9883 26.5159 43.2395C28.7671 45.4907 31.8204 46.7554 35.0041 46.7554C38.1878 46.7554 41.241 45.4907 43.4922 43.2395Z\" stroke=\"black\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+             "innerHTML": "<svg width=\"50\" height=\"50\" viewBox=\"0 0 73 73\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect width=\"72.7028\" height=\"72.7028\" rx=\"36.3514\" style=\"fill: var(--primary-color)\"/>\n<path d=\"M50.2082 49.9555L43.4922 43.2395M43.4922 43.2395C45.7434 40.9883 47.0082 37.935 47.0082 34.7514C47.0082 31.5677 45.7434 28.5144 43.4922 26.2632C41.241 24.012 38.1878 22.7473 35.0041 22.7473C31.8204 22.7473 28.7671 24.012 26.5159 26.2632C24.2647 28.5144 23 31.5677 23 34.7514C23 37.935 24.2647 40.9883 26.5159 43.2395C28.7671 45.4907 31.8204 46.7554 35.0041 46.7554C38.1878 46.7554 41.241 45.4907 43.4922 43.2395Z\" stroke=\"black\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
              "innerText": null,
              "isChildOfComponent": null,
              "isRepeaterBlock": false,
@@ -2030,7 +2030,7 @@
               {
                "attributes": {},
                "baseStyles": {
-                "color": "rgb(0, 0, 0)",
+                "color": "var(--btn-color)",
                 "fontFamily": "IBM Plex Sans",
                 "fontSize": "17px",
                 "fontWeight": "400",
@@ -7280,7 +7280,7 @@
  "idx": 0,
  "is_standard": 1,
  "is_template": 0,
- "modified": "2026-04-22 14:21:23.318443",
+ "modified": "2026-04-22 17:57:41.402790",
  "modified_by": "Administrator",
  "name": "page-1ccf0061",
  "owner": "Administrator",

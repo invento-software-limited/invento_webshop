@@ -477,7 +477,7 @@
                          "attributes": {},
                          "baseStyles": {},
                          "blockId": "hi5gu4mak",
-                         "blockName": "p | Price : £85.64",
+                         "blockName": "p | Price :\u00a0\u00a385.64",
                          "children": [],
                          "classes": [],
                          "customAttributes": {},
@@ -891,7 +891,7 @@
                  "attributes": {},
                  "baseStyles": {},
                  "blockId": "pyo5znto0",
-                 "blockName": "p | Price : £85.64",
+                 "blockName": "p | Price :\u00a0\u00a385.64",
                  "children": [],
                  "classes": [],
                  "customAttributes": {},
@@ -1017,7 +1017,7 @@
           "href": "/home"
          },
          "baseStyles": {
-          "color": "rgb(23, 19, 7)",
+          "color": "var(--btn-color)",
           "fontFamily": "IBM Plex Sans",
           "fontSize": "16px",
           "fontWeight": "500",
@@ -1046,7 +1046,7 @@
          "activeState": null,
          "attributes": {},
          "baseStyles": {
-          "borderColor": "rgb(23, 19, 7)",
+          "borderColor": "var(--primary-text-color)",
           "borderStyle": "solid",
           "borderWidth": "1px",
           "height": "0",
@@ -1061,13 +1061,13 @@
          "dynamicValues": [],
          "element": "svg",
          "extendedFromComponent": null,
-         "innerHTML": "<svg width=\"35\" height=\"1\" viewBox=\"0 0 35 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 0.5H35\" stroke=\"#171307\"/>\n</svg>\n",
+         "innerHTML": "<svg width=\"35\" height=\"1\" viewBox=\"0 0 35 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 0.5H35\" style=\"stroke: var(--primary-text-color)\"/>\n</svg>\n",
          "isChildOfComponent": null,
          "isRepeaterBlock": false,
          "mobileStyles": {},
          "originalElement": "__raw_html__",
          "rawStyles": {
-          "stroke": " #171307",
+          "stroke": "var(--primary-text-color)",
           "strokeWidth": "1px"
          },
          "referenceBlockId": null,
@@ -1078,7 +1078,7 @@
          "activeState": null,
          "attributes": {},
          "baseStyles": {
-          "color": "rgb(23, 19, 7)",
+          "color": "var(--primary-text-color)",
           "fontFamily": "IBM Plex Sans",
           "fontSize": "16px",
           "fontWeight": "500",
@@ -1238,7 +1238,7 @@
                "attributes": {},
                "baseStyles": {
                 "alignItems": "center",
-                "backgroundColor": "#f5f5f5",
+                "backgroundColor": "var(--secondary-bg-color)",
                 "borderColor": "#e8e8e899",
                 "borderRadius": "5px",
                 "borderStyle": "solid",
@@ -1286,7 +1286,7 @@
                    "activeState": null,
                    "attributes": {},
                    "baseStyles": {
-                    "color": "#222",
+                    "color": "var(--primary-text-color)",
                     "fontFamily": "IBM Plex Sans",
                     "fontSize": "22px",
                     "fontWeight": "600",
@@ -1313,7 +1313,7 @@
                    "activeState": null,
                    "attributes": {},
                    "baseStyles": {
-                    "color": "#222",
+                    "color": "var(--primary-text-color)",
                     "fontFamily": "IBM Plex Sans",
                     "fontSize": "14px",
                     "height": "fit-content",
@@ -1369,7 +1369,7 @@
                   "width": "425px"
                  },
                  "blockId": "0qtxmr8mv",
-                 "blockName": "Form → Input",
+                 "blockName": "Form \u2192 Input",
                  "children": [],
                  "classes": [],
                  "customAttributes": {},
@@ -1411,7 +1411,7 @@
                   "width": "425px"
                  },
                  "blockId": "xbvmguq7u",
-                 "blockName": "Form → Input",
+                 "blockName": "Form \u2192 Input",
                  "children": [],
                  "classes": [],
                  "customAttributes": {
@@ -1507,7 +1507,7 @@
                      "activeState": null,
                      "attributes": {},
                      "baseStyles": {
-                      "color": "#222",
+                      "color": "var(--primary-text-color)",
                       "fontSize": "14px",
                       "height": "fit-content",
                       "lineHeight": "1.4",
@@ -1582,7 +1582,7 @@
                  "attributes": {},
                  "baseStyles": {
                   "alignItems": "center",
-                  "backgroundColor": "#FFED00",
+                  "backgroundColor": "var(--btn-bg)",
                   "borderRadius": "5px",
                   "display": "flex",
                   "flexShrink": "0",
@@ -1592,7 +1592,7 @@
                   "width": "425px"
                  },
                  "blockId": "mwr3v7h1b",
-                 "blockName": "Form → Button",
+                 "blockName": "Form \u2192 Button",
                  "children": [
                   {
                    "activeState": null,
@@ -1709,7 +1709,7 @@
                    "activeState": null,
                    "attributes": {},
                    "baseStyles": {
-                    "color": "#222",
+                    "color": "var(--primary-text-color)",
                     "fontSize": "22px",
                     "fontWeight": "600",
                     "height": "fit-content",
@@ -1735,7 +1735,7 @@
                    "activeState": null,
                    "attributes": {},
                    "baseStyles": {
-                    "color": "#222",
+                    "color": "var(--primary-text-color)",
                     "fontSize": "14px",
                     "height": "fit-content",
                     "lineHeight": "1.4",
@@ -1751,7 +1751,7 @@
                    "dataKey": null,
                    "dynamicValues": [],
                    "element": "p",
-                   "innerHTML": "If you don’t have an username and password for this website please register",
+                   "innerHTML": "If you don\u2019t have an username and password for this website please register",
                    "mobileStyles": {},
                    "rawStyles": {},
                    "tabletStyles": {}
@@ -1773,7 +1773,7 @@
                  },
                  "baseStyles": {
                   "alignItems": "center",
-                  "backgroundColor": "#FFED00",
+                  "backgroundColor": "var(--btn-bg)",
                   "borderRadius": "5px",
                   "display": "flex",
                   "flexShrink": "0",
@@ -1783,7 +1783,7 @@
                   "width": "425px"
                  },
                  "blockId": "dfrc92oc0",
-                 "blockName": "Form → Button",
+                 "blockName": "Form \u2192 Button",
                  "children": [
                   {
                    "activeState": null,
@@ -1858,7 +1858,7 @@
                    "activeState": null,
                    "attributes": {},
                    "baseStyles": {
-                    "color": "#222",
+                    "color": "var(--primary-text-color)",
                     "fontSize": "14px",
                     "height": "fit-content",
                     "lineHeight": "1.4",
@@ -2970,7 +2970,7 @@
                  "attributes": {},
                  "baseStyles": {},
                  "blockId": "hwi3xdzvr",
-                 "blockName": "© 2025 Invento Software Limited. All rights reserved.",
+                 "blockName": "\u00a9 2025 Invento Software Limited. All rights reserved.",
                  "children": [],
                  "classes": [],
                  "customAttributes": {},
@@ -3652,7 +3652,7 @@
              "attributes": {},
              "baseStyles": {},
              "blockId": "v35hvtb92",
-             "blockName": "© 2025 Invento Software Limited. All rights reserved.",
+             "blockName": "\u00a9 2025 Invento Software Limited. All rights reserved.",
              "children": [],
              "classes": [],
              "customAttributes": {},
@@ -3972,7 +3972,7 @@
                      "attributes": {},
                      "baseStyles": {},
                      "blockId": "bx1t128ta",
-                     "blockName": "£25.00",
+                     "blockName": "\u00a325.00",
                      "children": [],
                      "classes": [],
                      "customAttributes": {},
@@ -4287,7 +4287,7 @@
              "attributes": {},
              "baseStyles": {},
              "blockId": "dedxwk07x",
-             "blockName": "£25.00",
+             "blockName": "\u00a325.00",
              "children": [],
              "classes": [],
              "customAttributes": {},
@@ -4999,7 +4999,7 @@
  "idx": 0,
  "is_standard": 1,
  "is_template": 0,
- "modified": "2026-01-31 15:27:26.587615",
+ "modified": "2026-04-22 21:30:00",
  "modified_by": "Administrator",
  "module": "Invento Webshop",
  "name": "page-0873e084",

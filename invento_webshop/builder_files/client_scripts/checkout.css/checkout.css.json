@@ -3,11 +3,11 @@
  "docstatus": 0,
  "doctype": "Builder Client Script",
  "idx": 37,
- "modified": "2026-01-20 12:15:01.628252",
+ "modified": "2026-04-22 21:30:00",
  "modified_by": "Administrator",
  "name": "checkout.css",
  "owner": "Administrator",
  "public_url": "/files/page_styles/CSS-0a080-670b2d0b62.css?v=9d5a56f589",
- "script": "/* Write your CSS here */\n.tab {\n    display: none; \n}\n.tab.active { \n    display: block; \n}\n.tab-button { \n    cursor: pointer; \n    border: none; \n    background: #f5f5f5; \n}\n.tab-button.active { \n    background: #FFED00; \n}",
+ "script": "/* Write your CSS here */\n.tab {\n    display: none; \n}\n.tab.active { \n    display: block; \n}\n.tab-button { \n    cursor: pointer; \n    border: none; \n    background: var(--secondary-bg-color); \n}\n.tab-button.active { \n    background: var(--btn-bg); \n}",
  "script_type": "CSS"
 }

@@ -3,11 +3,11 @@
  "docstatus": 0,
  "doctype": "Builder Client Script",
  "idx": 8,
- "modified": "2026-01-28 15:09:16.116435",
+ "modified": "2026-04-22 16:00:00.000000",
  "modified_by": "Administrator",
  "name": "faq.css",
  "owner": "Administrator",
  "public_url": "/files/page_styles/CSS-e2c9a-309e10eba1.css?v=e95b61e254",
- "script": "/* Write your CSS here */\n.is-active {\n  background-color: #FFED00;\n  color: #171307;\n  border-radius: 6px;\n  font-weight: 600;\n}\n\n.is-active p {\n  color: #171307;\n}\n",
+ "script": "/* Write your CSS here */\n.is-active {\n  background-color: var(--primary-color);\n  color: var(--primary-text-color);\n  border-radius: 6px;\n  font-weight: 600;\n}\n\n.is-active p {\n  color: var(--primary-text-color);\n}\n",
  "script_type": "CSS"
 }

@@ -1564,7 +1564,7 @@
           "href": "/home"
          },
          "baseStyles": {
-          "color": "rgb(23, 19, 7)",
+          "color": "var(--btn-color)",
           "fontFamily": "IBM Plex Sans",
           "fontSize": "16px",
           "fontWeight": "500",
@@ -1598,7 +1598,7 @@
         {
          "attributes": {},
          "baseStyles": {
-          "borderColor": "rgb(23, 19, 7)",
+          "borderColor": "var(--primary-text-color)",
           "borderStyle": "solid",
           "borderWidth": "1px",
           "height": "0",
@@ -1617,7 +1617,7 @@
          "element": "svg",
          "elementBeforeConversion": null,
          "extendedFromComponent": null,
-         "innerHTML": "<svg width=\"35\" height=\"1\" viewBox=\"0 0 35 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 0.5H35\" stroke=\"#171307\"/>\n</svg>\n",
+         "innerHTML": "<svg width=\"35\" height=\"1\" viewBox=\"0 0 35 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 0.5H35\" style=\"stroke: var(--primary-text-color)\"/>\n</svg>\n",
          "innerText": null,
          "isChildOfComponent": null,
          "isRepeaterBlock": false,
@@ -1625,7 +1625,7 @@
          "originalElement": "__raw_html__",
          "props": {},
          "rawStyles": {
-          "stroke": " #171307",
+          "stroke": "var(--primary-text-color)",
           "strokeWidth": "1px"
          },
          "referenceBlockId": null,
@@ -1635,7 +1635,7 @@
         {
          "attributes": {},
          "baseStyles": {
-          "color": "rgb(23, 19, 7)",
+          "color": "var(--primary-text-color)",
           "fontFamily": "IBM Plex Sans",
           "fontSize": "16px",
           "fontWeight": "500",
@@ -1844,7 +1844,7 @@
          "attributes": {},
          "baseStyles": {
           "alignItems": "flex-start",
-          "backgroundColor": "rgb(255, 253, 245)",
+          "backgroundColor": "var(--light-bg-color)",
           "boxShadow": "0 3px 35px 0 rgba(0, 0, 0, 0.06)",
           "display": "flex",
           "gap": "10px",
@@ -1973,7 +1973,7 @@
                     {
                      "attributes": {},
                      "baseStyles": {
-                      "color": "rgb(23, 19, 7)",
+                      "color": "var(--primary-text-color)",
                       "fontFamily": "IBM Plex Sans",
                       "fontSize": "17px",
                       "fontWeight": "400",
@@ -2036,7 +2036,7 @@
                       {
                        "attributes": {},
                        "baseStyles": {
-                        "color": "rgb(23, 19, 7)",
+                        "color": "var(--primary-text-color)",
                         "fontFamily": "IBM Plex Sans",
                         "fontSize": "17px",
                         "fontWeight": "400",
@@ -2364,7 +2364,7 @@
                     {
                      "attributes": {},
                      "baseStyles": {
-                      "color": "rgb(23, 19, 7)",
+                      "color": "var(--primary-text-color)",
                       "fontFamily": "IBM Plex Sans",
                       "fontSize": "17px",
                       "fontWeight": "400",
@@ -2399,7 +2399,7 @@
                     {
                      "attributes": {},
                      "baseStyles": {
-                      "color": "rgb(23, 19, 7)",
+                      "color": "var(--primary-text-color)",
                       "fontFamily": "IBM Plex Sans",
                       "fontSize": "17px",
                       "fontWeight": "400",
@@ -2459,7 +2459,7 @@
                    "attributes": {},
                    "baseStyles": {
                     "alignItems": "center",
-                    "backgroundColor": "rgb(255, 237, 0)",
+                    "backgroundColor": "var(--btn-bg)",
                     "borderRadius": "5px",
                     "display": "flex",
                     "gap": "10px",
@@ -2474,7 +2474,7 @@
                     {
                      "attributes": {},
                      "baseStyles": {
-                      "color": "rgb(0, 0, 0)",
+                      "color": "var(--btn-color)",
                       "fontFamily": "IBM Plex Sans",
                       "fontSize": "17px",
                       "fontWeight": "400",
@@ -2750,7 +2750,7 @@
                   {
                    "attributes": {},
                    "baseStyles": {
-                    "color": "rgb(23, 19, 7)",
+                    "color": "var(--primary-text-color)",
                     "fontFamily": "IBM Plex Sans",
                     "fontSize": "17px",
                     "fontWeight": "400",
@@ -2857,7 +2857,7 @@
                   {
                    "attributes": {},
                    "baseStyles": {
-                    "color": "rgb(23, 19, 7)",
+                    "color": "var(--primary-text-color)",
                     "fontFamily": "IBM Plex Sans",
                     "fontSize": "17px",
                     "fontWeight": "400",
@@ -2966,7 +2966,7 @@
                   {
                    "attributes": {},
                    "baseStyles": {
-                    "color": "rgb(23, 19, 7)",
+                    "color": "var(--primary-text-color)",
                     "fontFamily": "IBM Plex Sans",
                     "fontSize": "17px",
                     "fontWeight": "400",
@@ -3246,7 +3246,7 @@
                     {
                      "attributes": {},
                      "baseStyles": {
-                      "color": "rgb(23, 19, 7)",
+                      "color": "var(--primary-text-color)",
                       "fontFamily": "IBM Plex Sans",
                       "fontSize": "17px",
                       "fontWeight": "400",
@@ -3309,7 +3309,7 @@
                       {
                        "attributes": {},
                        "baseStyles": {
-                        "color": "rgb(23, 19, 7)",
+                        "color": "var(--primary-text-color)",
                         "fontFamily": "IBM Plex Sans",
                         "fontSize": "17px",
                         "fontWeight": "400",
@@ -4424,9 +4424,9 @@
              "attributes": {},
              "baseStyles": {
               "alignItems": "center",
-              "backgroundColor": "#FFED00",
+              "backgroundColor": "var(--btn-bg)",
               "borderRadius": "4px",
-              "color": "var(--gray-800)",
+              "color": "var(--btn-color)",
               "display": "flex",
               "flexDirection": "row",
               "height": "64px",
@@ -9574,7 +9574,7 @@
  "idx": 0,
  "is_standard": 1,
  "is_template": 0,
- "modified": "2026-04-22 14:21:23.593845",
+ "modified": "2026-04-22 17:57:40.990533",
  "modified_by": "Administrator",
  "name": "page-90b08431",
  "owner": "sakib@invento.com.bd",

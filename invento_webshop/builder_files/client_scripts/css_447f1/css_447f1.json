@@ -2,12 +2,12 @@
  "creation": "2026-01-29 12:04:03.349122",
  "docstatus": 0,
  "doctype": "Builder Client Script",
- "idx": 6,
- "modified": "2026-01-29 12:04:05.321945",
+ "idx": 7,
+ "modified": "2026-04-22 16:00:00",
  "modified_by": "Administrator",
  "name": "CSS-447f1",
  "owner": "Administrator",
- "public_url": "/files/page_styles/CSS-447f1-e6a021e850.css?v=bc925e3e86",
- "script": "/* Write your CSS here */\n/* Write your CSS here */\n.is-active {\n  background-color: #FFED00;\n  color: #171307;\n  border-radius: 6px;\n  font-weight: 600;\n}\n\n.is-active p {\n  color: #171307;\n}\n",
+ "public_url": "/files/page_styles/CSS-447f1-e6a021e850.css?v=9a0f841b20",
+ "script": "/* Write your CSS here */\n/* Write your CSS here */\n.is-active {\n  background-color: var(--primary-color);\n  color: var(--primary-text-color);\n  border-radius: 6px;\n  font-weight: 600;\n}\n\n.is-active p {\n  color: var(--primary-text-color);\n}\n",
  "script_type": "CSS"
 }
