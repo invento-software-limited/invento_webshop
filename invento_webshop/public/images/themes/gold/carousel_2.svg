@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 520" font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#FFFBC5"/>
+      <stop offset="55%"  stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#FFFBC5"/>
+    </linearGradient>
+    <radialGradient id="rg" cx="70%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#FFF465"/>
+      <stop offset="100%" stop-color="#D5C600"/>
+    </radialGradient>
+  </defs>
+  <rect width="1440" height="520" fill="url(#bg)"/>
+  <circle cx="1060" cy="260" r="245" fill="url(#rg)" opacity="0.88"/>
+  <circle cx="1060" cy="260" r="195" fill="rgba(255,255,255,0.09)"/>
+  <circle cx="825"  cy="95"  r="72" fill="#FFED00" opacity="0.14"/>
+  <circle cx="1290" cy="72"  r="52" fill="#FFF465" opacity="0.24"/>
+  <circle cx="1325" cy="430" r="84" fill="#D5C600" opacity="0.14"/>
+  <circle cx="808"  cy="438" r="58" fill="#FFF465" opacity="0.18"/>
+  <rect x="100" y="148" width="114" height="36" rx="18" fill="#FFED00"/>
+  <text x="157" y="172" font-size="13" font-weight="800" fill="#171307" text-anchor="middle" letter-spacing="3">NEW</text>
+  <text x="100" y="278" font-size="76" font-weight="900" fill="#171307" letter-spacing="-1">Fresh</text>
+  <text x="100" y="362" font-size="76" font-weight="900" fill="#FFED00" letter-spacing="-1">Arrivals</text>
+  <text x="100" y="406" font-size="20" fill="#52504C" opacity="0.86">The season&apos;s best, just landed.</text>
+  <rect x="100" y="430" width="232" height="56" rx="28" fill="#FFED00"/>
+  <text x="216" y="464" font-size="17" font-weight="700" fill="#171307" text-anchor="middle">Explore Collection &#x2192;</text>
+</svg>

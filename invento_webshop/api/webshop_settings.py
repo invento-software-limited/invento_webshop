@@ -31,3 +31,20 @@ def clear_all_cache():
 	frappe.clear_cache()
 	from frappe.website.utils import clear_cache
 	clear_cache()
+
+
+@frappe.whitelist()
+def reset_to_applied_theme():
+	"""Re-apply the currently active Webshop Theme, restoring all fields,
+	images and builder assets to the theme's correct values."""
+	applied = frappe.get_all(
+		"Webshop Theme",
+		filters={"status": "Applied"},
+		pluck="name",
+		limit=1,
+	)
+	if not applied:
+		frappe.throw("No theme is currently applied. Please apply a theme from the Webshop Theme list first.")
+
+	from invento_webshop.invento_webshop.doctype.webshop_theme.webshop_theme import apply_theme
+	return apply_theme(applied[0])

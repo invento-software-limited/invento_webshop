@@ -264,7 +264,16 @@ override_doctype_class = {
 
 
 fixtures = [
-    "Builder Settings"
+    "Builder Settings",
+    {
+        "doctype": "Webshop Theme",
+        "filters": [["name", "in", [
+            "Midnight Black", "Charcoal Slate", "Royal Blue", "Sky Blue",
+            "Ocean Teal", "Emerald", "Forest Green", "Crimson Red",
+            "Sunset Orange", "Amber Honey", "Fuchsia Pink", "Deep Violet",
+            "Pure Black", "Carbon", "Gunmetal"
+        ]]]
+    }
 ]
 
 # Scheduled tasks

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 520" font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#1557B0"/>
+      <stop offset="100%" stop-color="#1A73E8"/>
+    </linearGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.97"/>
+      <stop offset="100%" stop-color="#E8F0FD"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="520" fill="url(#bg)"/>
+  <ellipse cx="220"  cy="520" rx="420" ry="210" fill="rgba(255,255,255,0.06)"/>
+  <ellipse cx="1300" cy="0"   rx="360" ry="190" fill="rgba(255,255,255,0.06)"/>
+  <ellipse cx="720"  cy="520" rx="600" ry="120" fill="rgba(255,255,255,0.04)"/>
+  <circle cx="1110" cy="262" r="215" fill="url(#badge)" opacity="0.96"/>
+  <circle cx="1110" cy="262" r="175" fill="rgba(255,255,255,0.08)"/>
+  <text x="1110" y="218" font-size="28" font-weight="800" fill="#1557B0" text-anchor="middle" letter-spacing="1">UP TO</text>
+  <text x="1110" y="308" font-size="92" font-weight="900" fill="#1A73E8" text-anchor="middle" letter-spacing="-2">50%</text>
+  <text x="1110" y="348" font-size="28" font-weight="800" fill="#1557B0" text-anchor="middle" letter-spacing="2">OFF</text>
+  <text x="100" y="178" font-size="13" font-weight="700" fill="rgba(255,255,255,0.72)" letter-spacing="4">LIMITED TIME OFFER</text>
+  <text x="100" y="272" font-size="74" font-weight="900" fill="#FFFFFF" letter-spacing="-1">Exclusive</text>
+  <text x="100" y="354" font-size="74" font-weight="900" fill="#FFFFFF" letter-spacing="-1">Deals.</text>
+  <text x="100" y="398" font-size="19" fill="rgba(255,255,255,0.84)">Shop premium products at unbeatable prices.</text>
+  <rect x="100" y="424" width="216" height="56" rx="28" fill="#FFFFFF"/>
+  <text x="208" y="458" font-size="17" font-weight="700" fill="#1A73E8" text-anchor="middle">Grab the Deal &#x2192;</text>
+</svg>

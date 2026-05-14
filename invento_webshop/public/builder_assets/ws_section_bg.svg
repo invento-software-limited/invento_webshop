@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 896" preserveAspectRatio="xMidYMid slice">
+  <rect width="1800" height="896" fill="#F5F3FF"/>
+  <!-- Corner accents -->
+  <circle cx="-80"  cy="-80"  r="340" fill="#8B5CF6" opacity="0.25"/>
+  <circle cx="1880" cy="976"  r="340" fill="#8B5CF6" opacity="0.25"/>
+  <circle cx="1880" cy="-80"  r="240" fill="#7C3AED" opacity="0.08"/>
+  <circle cx="-80"  cy="976"  r="240" fill="#7C3AED" opacity="0.08"/>
+  <!-- Centre subtle radial -->
+  <circle cx="900" cy="448" r="500"  fill="#7C3AED" opacity="0.04"/>
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1800" height="3" fill="#7C3AED" opacity="0.25"/>
+</svg>

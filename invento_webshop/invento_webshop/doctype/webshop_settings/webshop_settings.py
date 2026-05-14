@@ -9,11 +9,14 @@ import frappe
 from frappe.model.document import Document
 
 # Maps Webshop Settings field → stable filename in public/builder_assets/
+# All dynamic theme assets use SVG so Builder pages receive crisp vector graphics.
 STABLE_ASSET_MAP = {
-	"carousel_image_1": "ws_carousel_1.webp",
-	"carousel_image_2": "ws_carousel_2.webp",
-	"carousel_image_3": "ws_carousel_3.webp",
-	"logo": "ws_logo.webp",
+	"logo":            "ws_logo.svg",
+	"footer_logo":     "ws_footer_logo.svg",
+	"why_us_bg":       "ws_section_bg.svg",
+	"carousel_image_1": "ws_carousel_1.svg",
+	"carousel_image_2": "ws_carousel_2.svg",
+	"carousel_image_3": "ws_carousel_3.svg",
 }
 
 

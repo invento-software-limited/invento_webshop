@@ -11,6 +11,9 @@
   "show_price_for_guest",
   "branding_section",
   "logo",
+  "footer_logo",
+  "column_break_footer_logo",
+  "why_us_bg",
   "theme_section",
   "theme_primary",
   "column_break_theme",
@@ -88,7 +91,24 @@
   {
    "fieldname": "logo",
    "fieldtype": "Attach Image",
-   "label": "Logo"
+   "label": "Logo",
+   "description": "Navbar logo (auto-synced from applied theme)"
+  },
+  {
+   "fieldname": "footer_logo",
+   "fieldtype": "Attach Image",
+   "label": "Footer Logo",
+   "description": "Footer logo shown on dark background (auto-synced from applied theme)"
+  },
+  {
+   "fieldname": "column_break_footer_logo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "why_us_bg",
+   "fieldtype": "Attach Image",
+   "label": "\"What Makes Us Different\" Background",
+   "description": "Section background image (auto-synced from applied theme)"
   },
   {
    "fieldname": "theme_section",

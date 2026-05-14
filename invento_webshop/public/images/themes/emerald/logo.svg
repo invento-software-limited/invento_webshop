@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#059669"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs>
+  <path d="M23 52 Q6 38 8 14 Q30 8 40 26 Q36 52 23 52 Z" fill="url(#g)"/>
+  <path d="M23 52 L17 26" stroke="rgba(255,255,255,0.4)" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M17 26 L26 20" stroke="rgba(255,255,255,0.25)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M17 26 L10 30" stroke="rgba(255,255,255,0.25)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <text x="48" y="38" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="21" font-weight="800" fill="#064E3B" letter-spacing="0.5">INVENTO</text>
+  <text x="49" y="53" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="9" font-weight="600" fill="#059669" letter-spacing="4">WEBSHOP</text>
+</svg>

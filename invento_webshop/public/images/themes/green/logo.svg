@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64">
+  <defs><linearGradient id="g" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#166534"/><stop offset="100%" stop-color="#15803D"/></linearGradient></defs>
+  <polygon points="23,8 38,34 8,34" fill="url(#g)"/>
+  <polygon points="23,18 35,38 11,38" fill="#15803D" opacity="0.85"/>
+  <rect x="19" y="38" width="8" height="14" rx="2" fill="#166534"/>
+  <text x="48" y="38" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="21" font-weight="800" fill="#052E16" letter-spacing="0.5">INVENTO</text>
+  <text x="49" y="53" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="9" font-weight="600" fill="#15803D" letter-spacing="4">WEBSHOP</text>
+</svg>
