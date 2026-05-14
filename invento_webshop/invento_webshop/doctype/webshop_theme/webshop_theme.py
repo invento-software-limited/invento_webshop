@@ -153,12 +153,9 @@ def _write_all_svgs(theme):
 	# 5. Footer background — dark SVG that contrasts with white footer text
 	_write(STABLE["footer_bg"], _svg_footer_bg(p, d, l))
 
-	# 6. "What Makes Us Different" inline SVG icon color
-	_patch_svg_icon(p)
-
-	# 7. Point navbar/mobile-nav directly to this theme's own logo file
+	# 6. Point navbar/mobile-nav directly to this theme's own logo file
 	#    (different URL per theme → browser never serves a stale cached version)
-	_update_navbar_logo(theme.get("logo") or f"/assets/invento_webshop/builder_assets/{STABLE['logo']}")
+	_update_navbar_logo(f"/assets/invento_webshop/builder_assets/{STABLE['logo']}")
 
 
 # ── SVG builders ──────────────────────────────────────────────────────────────
@@ -293,7 +290,7 @@ def _svg_carousel_2(p, d, l, f):
 </svg>"""
 
 
-def _svg_carousel_3(p, d, f):
+def _svg_carousel_3(p, d, l, f):
 	return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 656" font-family="{FONT}">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">

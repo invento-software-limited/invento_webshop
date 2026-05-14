@@ -7,7 +7,7 @@
  "modified_by": "Administrator",
  "name": "CSS-c9981",
  "owner": "Administrator",
- "public_url": "/files/page_styles/CSS-c9981-766f5a3527.css?v=e2a8732012",
+ "public_url": "/files/page_styles/CSS-c9981-766f5a3527.css?v=14fd0b9bb3",
  "script": "/* Write your CSS here */\n/* Write your CSS here */\n.tab {\n    display: none; \n}\n.tab.active { \n    display: flex; \n}\n.tab-button { \n    cursor: pointer; \n    border: none; \n    background: var(--secondary-bg-color); \n}\n.tab-button.active { \n    background: var(--btn-bg); \n}",
  "script_type": "CSS"
 }

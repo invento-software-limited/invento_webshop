@@ -7,7 +7,7 @@
  "modified_by": "Administrator",
  "name": "CSS-df456",
  "owner": "Administrator",
- "public_url": "/files/page_styles/CSS-df456-c6884f0293.css?v=b6efc99dcb",
+ "public_url": "/files/page_styles/CSS-df456-c6884f0293.css?v=c2a6a3d248",
  "script": "/* Write your CSS here */\n.tab {\n    display: none; \n}\n.tab.active { \n    display: block;\n}\n.tabs { \n    display: flex; \n    justify-content: space-around; \n    margin-bottom: 20px; \n}\n.tab-button { \n    cursor: pointer; \n    border: none; \n    border-radius: 10px;\n    padding: 5px;\n}\n.tab-button.active {\n  background-color: var(--primary-color-faint);\n}\n\n.tab-button.active .__text_block__{\n    font-weight: 700;\n}",
  "script_type": "CSS"
 }
