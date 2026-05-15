@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 896" preserveAspectRatio="xMidYMid slice">
-  <rect width="1800" height="896" fill="#FFFBEB"/>
+  <rect width="1800" height="896" fill="#FDF2F8"/>
   <!-- Corner accents -->
-  <circle cx="-80"  cy="-80"  r="340" fill="#F59E0B" opacity="0.25"/>
-  <circle cx="1880" cy="976"  r="340" fill="#F59E0B" opacity="0.25"/>
-  <circle cx="1880" cy="-80"  r="240" fill="#D97706" opacity="0.08"/>
-  <circle cx="-80"  cy="976"  r="240" fill="#D97706" opacity="0.08"/>
+  <circle cx="-80"  cy="-80"  r="340" fill="#EC4899" opacity="0.25"/>
+  <circle cx="1880" cy="976"  r="340" fill="#EC4899" opacity="0.25"/>
+  <circle cx="1880" cy="-80"  r="240" fill="#DB2777" opacity="0.08"/>
+  <circle cx="-80"  cy="976"  r="240" fill="#DB2777" opacity="0.08"/>
   <!-- Centre subtle radial -->
-  <circle cx="900" cy="448" r="500"  fill="#D97706" opacity="0.04"/>
+  <circle cx="900" cy="448" r="500"  fill="#DB2777" opacity="0.04"/>
   <!-- Top accent line -->
-  <rect x="0" y="0" width="1800" height="3" fill="#D97706" opacity="0.25"/>
+  <rect x="0" y="0" width="1800" height="3" fill="#DB2777" opacity="0.25"/>
 </svg>

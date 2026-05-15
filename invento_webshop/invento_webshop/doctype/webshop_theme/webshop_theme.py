@@ -296,90 +296,183 @@ def _svg_opening_hours_bg(p, d, l, f):
 
 
 def _svg_carousel_1(p, d, l, f):
-	return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 656" font-family="{FONT}">
+	# Slide 1: "Discover Our Collection" — portrait 810x891, centered 2x2 grid
+	return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 891" font-family="{FONT}">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="{f}"/>
-      <stop offset="100%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="{f}"/>
+    </linearGradient>
+    <linearGradient id="c1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="{f}"/>
+      <stop offset="100%" stop-color="{l}"/>
+    </linearGradient>
+    <linearGradient id="c2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="{l}"/>
+      <stop offset="100%" stop-color="{d}" stop-opacity="0.4"/>
     </linearGradient>
   </defs>
-  <rect width="810" height="656" fill="url(#bg)"/>
-  <polygon points="490,0 810,0 810,656 380,656" fill="{p}"/>
-  <circle cx="680" cy="180" r="180" fill="{d}" opacity="0.25"/>
-  <circle cx="560" cy="520" r="130" fill="{l}" opacity="0.22"/>
-  <circle cx="680" cy="310" r="140" fill="rgba(255,255,255,0.10)"/>
-  <circle cx="680" cy="310" r="96"  fill="rgba(255,255,255,0.07)"/>
-  <rect x="60" y="140" width="8" height="360" fill="{p}" opacity="0.28"/>
-  <rect x="0" y="650" width="470" height="6" fill="{p}"/>
-  <text x="60" y="220" font-size="11" font-weight="700" fill="#475569" letter-spacing="5">WELCOME TO OUR STORE</text>
-  <text x="60" y="316" font-size="58" font-weight="900" fill="#0F172A" letter-spacing="-1">Shop the</text>
-  <text x="60" y="384" font-size="58" font-weight="900" fill="{p}">Latest.</text>
-  <text x="60" y="430" font-size="16" fill="#475569" opacity="0.9">Handpicked products crafted for you.</text>
-  <rect  x="60" y="460" width="172" height="48" rx="24" fill="{p}"/>
-  <text x="146" y="490" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Shop Now &#x2192;</text>
+  <rect width="810" height="891" fill="url(#bg)"/>
+  <ellipse cx="405" cy="-40" rx="500" ry="200" fill="{p}" opacity="0.06"/>
+  <ellipse cx="405" cy="940" rx="500" ry="200" fill="{p}" opacity="0.06"/>
+  <g opacity="0.14" fill="{d}">
+    <circle cx="680" cy="60" r="4"/><circle cx="710" cy="60" r="4"/><circle cx="740" cy="60" r="4"/>
+    <circle cx="680" cy="90" r="4"/><circle cx="710" cy="90" r="4"/><circle cx="740" cy="90" r="4"/>
+    <circle cx="680" cy="120" r="4"/><circle cx="710" cy="120" r="4"/><circle cx="740" cy="120" r="4"/>
+  </g>
+  <text x="405" y="110" font-size="11" font-weight="700" fill="#64748B" text-anchor="middle" letter-spacing="5">WELCOME TO OUR STORE</text>
+  <text x="405" y="196" font-size="68" font-weight="900" fill="#0F172A" text-anchor="middle" letter-spacing="-2">Discover</text>
+  <text x="405" y="272" font-size="68" font-weight="900" fill="{p}" text-anchor="middle" letter-spacing="-2">Our Collection</text>
+  <text x="405" y="316" font-size="16" fill="#64748B" text-anchor="middle">Handpicked products for every need.</text>
+  <rect x="120" y="356" width="265" height="210" rx="16" fill="white" opacity="0.95"/>
+  <rect x="133" y="368" width="240" height="138" rx="10" fill="url(#c1)"/>
+  <circle cx="253" cy="437" r="38" fill="{p}" opacity="0.20"/>
+  <rect x="133" y="514" width="140" height="10" rx="5" fill="{d}" opacity="0.35"/>
+  <rect x="133" y="530" width="100" height="10" rx="5" fill="{p}"/>
+  <rect x="120" y="349" width="60" height="22" rx="11" fill="{p}"/>
+  <text x="150" y="364" font-size="8" font-weight="800" fill="white" text-anchor="middle" letter-spacing="1">NEW</text>
+  <rect x="425" y="356" width="265" height="210" rx="16" fill="white" opacity="0.95"/>
+  <rect x="438" y="368" width="240" height="138" rx="10" fill="url(#c2)"/>
+  <circle cx="558" cy="437" r="38" fill="{l}" opacity="0.50"/>
+  <rect x="438" y="514" width="140" height="10" rx="5" fill="{d}" opacity="0.35"/>
+  <rect x="438" y="530" width="100" height="10" rx="5" fill="{p}"/>
+  <rect x="425" y="349" width="60" height="22" rx="11" fill="{d}"/>
+  <text x="455" y="364" font-size="8" font-weight="800" fill="white" text-anchor="middle" letter-spacing="1">SALE</text>
+  <rect x="120" y="586" width="265" height="210" rx="16" fill="white" opacity="0.95"/>
+  <rect x="133" y="598" width="240" height="138" rx="10" fill="{d}" opacity="0.18"/>
+  <circle cx="253" cy="667" r="38" fill="{f}" opacity="0.80"/>
+  <rect x="133" y="744" width="140" height="10" rx="5" fill="{d}" opacity="0.35"/>
+  <rect x="133" y="760" width="100" height="10" rx="5" fill="{p}"/>
+  <rect x="425" y="586" width="265" height="210" rx="16" fill="white" opacity="0.95"/>
+  <rect x="438" y="598" width="240" height="138" rx="10" fill="{f}"/>
+  <circle cx="558" cy="667" r="38" fill="{d}" opacity="0.25"/>
+  <rect x="438" y="744" width="140" height="10" rx="5" fill="{d}" opacity="0.35"/>
+  <rect x="438" y="760" width="100" height="10" rx="5" fill="{p}"/>
+  <rect x="120" y="816" width="90" height="26" rx="13" fill="{p}" opacity="0.15"/>
+  <text x="165" y="833" font-size="9" fill="{d}" text-anchor="middle" font-weight="600">Electronics</text>
+  <rect x="222" y="816" width="80" height="26" rx="13" fill="{p}" opacity="0.15"/>
+  <text x="262" y="833" font-size="9" fill="{d}" text-anchor="middle" font-weight="600">Fashion</text>
+  <rect x="314" y="816" width="80" height="26" rx="13" fill="{p}" opacity="0.15"/>
+  <text x="354" y="833" font-size="9" fill="{d}" text-anchor="middle" font-weight="600">Kitchen</text>
+  <rect x="406" y="816" width="80" height="26" rx="13" fill="{p}" opacity="0.15"/>
+  <text x="446" y="833" font-size="9" fill="{d}" text-anchor="middle" font-weight="600">Garden</text>
+  <text x="405" y="872" font-size="16" fill="{p}" text-anchor="middle">&#9733;&#9733;&#9733;&#9733;&#9733;  Trusted by thousands</text>
 </svg>"""
 
 
 def _svg_carousel_2(p, d, l, f):
-	return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 656" font-family="{FONT}">
+	# Slide 2: "Fresh Picks" — portrait 810x891, 3-column product grid
+	return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 891" font-family="{FONT}">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="{f}"/>
-      <stop offset="55%"  stop-color="#FFFFFF"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
       <stop offset="100%" stop-color="{f}"/>
     </linearGradient>
-    <radialGradient id="rg" cx="68%" cy="50%" r="48%">
-      <stop offset="0%"   stop-color="{l}"/>
-      <stop offset="100%" stop-color="{d}"/>
+    <radialGradient id="blob" cx="50%" cy="38%" r="38%">
+      <stop offset="0%" stop-color="{l}" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="{l}" stop-opacity="0"/>
     </radialGradient>
   </defs>
-  <rect width="810" height="656" fill="url(#bg)"/>
-  <circle cx="570" cy="328" r="230" fill="url(#rg)" opacity="0.90"/>
-  <circle cx="570" cy="328" r="182" fill="rgba(255,255,255,0.09)"/>
-  <circle cx="370" cy="80"  r="68"  fill="{p}" opacity="0.12"/>
-  <circle cx="730" cy="60"  r="50"  fill="{l}" opacity="0.22"/>
-  <circle cx="760" cy="560" r="80"  fill="{d}" opacity="0.13"/>
-  <rect x="60" y="148" width="104" height="32" rx="16" fill="{p}"/>
-  <text x="112" y="170" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">NEW</text>
-  <text x="60"  y="280" font-size="62" font-weight="900" fill="#0F172A" letter-spacing="-1">Fresh</text>
-  <text x="60"  y="352" font-size="62" font-weight="900" fill="{p}"     letter-spacing="-1">Arrivals</text>
-  <text x="60"  y="396" font-size="16" fill="#475569" opacity="0.88">The season&apos;s best, just landed.</text>
-  <rect  x="60" y="424" width="208" height="48" rx="24" fill="{p}"/>
-  <text x="164" y="454" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Explore &#x2192;</text>
+  <rect width="810" height="891" fill="url(#bg)"/>
+  <rect width="810" height="891" fill="url(#blob)"/>
+  <circle cx="405" cy="320" r="280" fill="{f}" opacity="0.50"/>
+  <rect x="270" y="56" width="270" height="44" rx="22" fill="{p}"/>
+  <text x="405" y="84" font-size="14" font-weight="800" fill="white" text-anchor="middle" letter-spacing="3">NEW ARRIVALS</text>
+  <text x="405" y="176" font-size="72" font-weight="900" fill="#0F172A" text-anchor="middle" letter-spacing="-2">Fresh</text>
+  <text x="405" y="256" font-size="72" font-weight="900" fill="{p}" text-anchor="middle" letter-spacing="-2">Picks.</text>
+  <text x="405" y="300" font-size="15" fill="#64748B" text-anchor="middle">Updated weekly &#8212; don&#39;t miss out.</text>
+  <rect x="100" y="340" width="185" height="172" rx="14" fill="white" opacity="0.95"/>
+  <rect x="112" y="352" width="161" height="108" rx="9" fill="{f}"/>
+  <circle cx="193" cy="406" r="30" fill="{p}" opacity="0.25"/>
+  <rect x="112" y="468" width="100" height="9" rx="4" fill="{d}" opacity="0.35"/>
+  <rect x="112" y="482" width="72" height="9" rx="4" fill="{p}"/>
+  <rect x="100" y="333" width="52" height="19" rx="9" fill="{p}"/>
+  <text x="126" y="346" font-size="8" font-weight="700" fill="white" text-anchor="middle">NEW</text>
+  <rect x="312" y="340" width="185" height="172" rx="14" fill="white" opacity="0.95"/>
+  <rect x="324" y="352" width="161" height="108" rx="9" fill="{l}"/>
+  <circle cx="405" cy="406" r="30" fill="{d}" opacity="0.18"/>
+  <rect x="324" y="468" width="100" height="9" rx="4" fill="{d}" opacity="0.35"/>
+  <rect x="324" y="482" width="72" height="9" rx="4" fill="{p}"/>
+  <rect x="312" y="333" width="52" height="19" rx="9" fill="{d}"/>
+  <text x="338" y="346" font-size="8" font-weight="700" fill="white" text-anchor="middle">SALE</text>
+  <rect x="524" y="340" width="185" height="172" rx="14" fill="white" opacity="0.95"/>
+  <rect x="536" y="352" width="161" height="108" rx="9" fill="{d}" opacity="0.22"/>
+  <circle cx="617" cy="406" r="30" fill="{l}" opacity="0.65"/>
+  <rect x="536" y="468" width="100" height="9" rx="4" fill="{d}" opacity="0.35"/>
+  <rect x="536" y="482" width="72" height="9" rx="4" fill="{p}"/>
+  <rect x="100" y="532" width="185" height="172" rx="14" fill="white" opacity="0.95"/>
+  <rect x="112" y="544" width="161" height="108" rx="9" fill="{l}"/>
+  <circle cx="193" cy="598" r="30" fill="{p}" opacity="0.20"/>
+  <rect x="112" y="660" width="100" height="9" rx="4" fill="{d}" opacity="0.35"/>
+  <rect x="112" y="674" width="72" height="9" rx="4" fill="{p}"/>
+  <rect x="312" y="532" width="185" height="172" rx="14" fill="white" opacity="0.95"/>
+  <rect x="324" y="544" width="161" height="108" rx="9" fill="{f}"/>
+  <circle cx="405" cy="598" r="30" fill="{d}" opacity="0.25"/>
+  <rect x="324" y="660" width="100" height="9" rx="4" fill="{d}" opacity="0.35"/>
+  <rect x="324" y="674" width="72" height="9" rx="4" fill="{p}"/>
+  <rect x="524" y="532" width="185" height="172" rx="14" fill="white" opacity="0.95"/>
+  <rect x="536" y="544" width="161" height="108" rx="9" fill="{p}" opacity="0.18"/>
+  <circle cx="617" cy="598" r="30" fill="{p}" opacity="0.35"/>
+  <rect x="536" y="660" width="100" height="9" rx="4" fill="{d}" opacity="0.35"/>
+  <rect x="536" y="674" width="72" height="9" rx="4" fill="{p}"/>
+  <rect x="100" y="724" width="185" height="100" rx="14" fill="white" opacity="0.45"/>
+  <rect x="312" y="724" width="185" height="100" rx="14" fill="white" opacity="0.45"/>
+  <rect x="524" y="724" width="185" height="100" rx="14" fill="white" opacity="0.45"/>
+  <circle cx="391" cy="856" r="7" fill="{p}"/>
+  <circle cx="413" cy="856" r="7" fill="{p}" opacity="0.45"/>
+  <circle cx="435" cy="856" r="7" fill="{p}" opacity="0.22"/>
 </svg>"""
 
 
 def _svg_carousel_3(p, d, l, f):
-	return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 656" font-family="{FONT}">
+	# Slide 3: "Quality You Can Trust" — portrait 810x891, dark bg + package + trust
+	return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 891" font-family="{FONT}">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%"   stop-color="{d}"/>
-      <stop offset="100%" stop-color="{p}"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="{d}"/>
+      <stop offset="55%" stop-color="{p}"/>
+      <stop offset="100%" stop-color="{d}"/>
     </linearGradient>
-    <linearGradient id="badge" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.98"/>
-      <stop offset="100%" stop-color="{f}"/>
+    <linearGradient id="box" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.24)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.06)"/>
     </linearGradient>
   </defs>
-  <rect width="810" height="656" fill="url(#bg)"/>
-  <ellipse cx="100" cy="656" rx="400" ry="200" fill="rgba(255,255,255,0.05)"/>
-  <ellipse cx="750" cy="0"   rx="340" ry="180" fill="rgba(255,255,255,0.05)"/>
-  <circle cx="610" cy="310" r="200" fill="url(#badge)" opacity="0.97"/>
-  <circle cx="610" cy="310" r="162" fill="{f}" opacity="0.30"/>
-  <circle cx="610" cy="310" r="72"  fill="{p}"/>
-  <text x="610" y="270" font-size="22" font-weight="800" fill="{d}" text-anchor="middle" letter-spacing="1">UP TO</text>
-  <text x="610" y="340" font-size="72" font-weight="900" fill="{p}" text-anchor="middle" letter-spacing="-2">50%</text>
-  <text x="610" y="372" font-size="22" font-weight="800" fill="{d}" text-anchor="middle" letter-spacing="2">OFF</text>
-  <text x="60" y="200" font-size="11" font-weight="700" fill="rgba(255,255,255,0.70)" letter-spacing="5">LIMITED TIME OFFER</text>
-  <text x="60" y="290" font-size="58" font-weight="900" fill="#FFFFFF" letter-spacing="-1">Exclusive</text>
-  <text x="60" y="358" font-size="58" font-weight="900" fill="#FFFFFF" letter-spacing="-1">Deals.</text>
-  <text x="60" y="400" font-size="15" fill="rgba(255,255,255,0.82)">Unbeatable prices on premium products.</text>
-  <rect  x="60" y="426" width="196" height="48" rx="24" fill="#FFFFFF"/>
-  <text x="158" y="456" font-size="14" font-weight="700" fill="{p}" text-anchor="middle">Grab Deal &#x2192;</text>
+  <rect width="810" height="891" fill="url(#bg)"/>
+  <circle cx="405" cy="445" r="340" fill="rgba(255,255,255,0.03)"/>
+  <circle cx="405" cy="445" r="240" fill="rgba(255,255,255,0.03)"/>
+  <circle cx="100" cy="80" r="5" fill="rgba(255,255,255,0.18)"/>
+  <circle cx="130" cy="80" r="5" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="680" cy="80" r="5" fill="rgba(255,255,255,0.18)"/>
+  <circle cx="710" cy="80" r="5" fill="rgba(255,255,255,0.12)"/>
+  <text x="405" y="116" font-size="11" font-weight="700" fill="rgba(255,255,255,0.60)" text-anchor="middle" letter-spacing="5">PREMIUM QUALITY</text>
+  <text x="405" y="200" font-size="66" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="-2">Quality You</text>
+  <text x="405" y="278" font-size="66" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="-2">Can Trust.</text>
+  <rect x="255" y="330" width="300" height="260" rx="18" fill="url(#box)" stroke="rgba(255,255,255,0.20)" stroke-width="2"/>
+  <rect x="244" y="304" width="322" height="46" rx="14" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.28)" stroke-width="1.5"/>
+  <rect x="390" y="304" width="32" height="286" fill="rgba(255,255,255,0.14)"/>
+  <rect x="255" y="444" width="300" height="32" fill="rgba(255,255,255,0.14)"/>
+  <path d="M392,304 Q348,240 308,256 Q295,272 392,304" fill="rgba(255,255,255,0.32)"/>
+  <path d="M422,304 Q466,240 506,256 Q519,272 422,304" fill="rgba(255,255,255,0.32)"/>
+  <rect x="284" y="488" width="242" height="70" rx="10" fill="rgba(255,255,255,0.14)"/>
+  <rect x="296" y="500" width="120" height="10" rx="5" fill="rgba(255,255,255,0.55)"/>
+  <rect x="296" y="518" width="86" height="10" rx="5" fill="rgba(255,255,255,0.35)"/>
+  <rect x="296" y="536" width="100" height="10" rx="5" fill="rgba(255,255,255,0.35)"/>
+  <text x="220" y="340" font-size="20" fill="rgba(255,255,255,0.45)">&#9733;</text>
+  <text x="572" y="320" font-size="16" fill="rgba(255,255,255,0.35)">&#9733;</text>
+  <text x="560" y="590" font-size="24" fill="rgba(255,255,255,0.28)">&#9733;</text>
+  <text x="228" y="580" font-size="14" fill="rgba(255,255,255,0.30)">&#9733;</text>
+  <rect x="180" y="638" width="450" height="52" rx="12" fill="rgba(255,255,255,0.10)"/>
+  <text x="405" y="669" font-size="14" fill="rgba(255,255,255,0.92)" text-anchor="middle">&#10003;  Premium products, verified quality</text>
+  <rect x="180" y="700" width="450" height="52" rx="12" fill="rgba(255,255,255,0.10)"/>
+  <text x="405" y="731" font-size="14" fill="rgba(255,255,255,0.92)" text-anchor="middle">&#10003;  Secure checkout &#38; easy returns</text>
+  <rect x="180" y="762" width="450" height="52" rx="12" fill="rgba(255,255,255,0.10)"/>
+  <text x="405" y="793" font-size="14" fill="rgba(255,255,255,0.92)" text-anchor="middle">&#10003;  Fast delivery to your door</text>
+  <text x="405" y="852" font-size="18" fill="{f}" text-anchor="middle">&#9733;&#9733;&#9733;&#9733;&#9733;  4.9 / 5  &#183;  2,000+ customers</text>
 </svg>"""
 
 
-# ── Logo cache buster ────────────────────────────────────────────────────────
 
 def _update_navbar_logo(logo_url):
 	"""Set the navbar & mobile-nav logo src to logo_url.

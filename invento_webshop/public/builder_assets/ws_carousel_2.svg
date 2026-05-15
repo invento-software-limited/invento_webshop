@@ -1,26 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 656" font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 891" font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#FFFBEB"/>
-      <stop offset="55%"  stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#FFFBEB"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#FDF2F8"/>
     </linearGradient>
-    <radialGradient id="rg" cx="68%" cy="50%" r="48%">
-      <stop offset="0%"   stop-color="#F59E0B"/>
-      <stop offset="100%" stop-color="#B45309"/>
+    <radialGradient id="blob" cx="50%" cy="38%" r="38%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#EC4899" stop-opacity="0"/>
     </radialGradient>
   </defs>
-  <rect width="810" height="656" fill="url(#bg)"/>
-  <circle cx="570" cy="328" r="230" fill="url(#rg)" opacity="0.90"/>
-  <circle cx="570" cy="328" r="182" fill="rgba(255,255,255,0.09)"/>
-  <circle cx="370" cy="80"  r="68"  fill="#D97706" opacity="0.12"/>
-  <circle cx="730" cy="60"  r="50"  fill="#F59E0B" opacity="0.22"/>
-  <circle cx="760" cy="560" r="80"  fill="#B45309" opacity="0.13"/>
-  <rect x="60" y="148" width="104" height="32" rx="16" fill="#D97706"/>
-  <text x="112" y="170" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">NEW</text>
-  <text x="60"  y="280" font-size="62" font-weight="900" fill="#0F172A" letter-spacing="-1">Fresh</text>
-  <text x="60"  y="352" font-size="62" font-weight="900" fill="#D97706"     letter-spacing="-1">Arrivals</text>
-  <text x="60"  y="396" font-size="16" fill="#475569" opacity="0.88">The season&apos;s best, just landed.</text>
-  <rect  x="60" y="424" width="208" height="48" rx="24" fill="#D97706"/>
-  <text x="164" y="454" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Explore &#x2192;</text>
+  <rect width="810" height="891" fill="url(#bg)"/>
+  <rect width="810" height="891" fill="url(#blob)"/>
+  <circle cx="405" cy="320" r="280" fill="#FDF2F8" opacity="0.50"/>
+  <rect x="270" y="56" width="270" height="44" rx="22" fill="#DB2777"/>
+  <text x="405" y="84" font-size="14" font-weight="800" fill="white" text-anchor="middle" letter-spacing="3">NEW ARRIVALS</text>
+  <text x="405" y="176" font-size="72" font-weight="900" fill="#0F172A" text-anchor="middle" letter-spacing="-2">Fresh</text>
+  <text x="405" y="256" font-size="72" font-weight="900" fill="#DB2777" text-anchor="middle" letter-spacing="-2">Picks.</text>
+  <text x="405" y="300" font-size="15" fill="#64748B" text-anchor="middle">Updated weekly &#8212; don&#39;t miss out.</text>
+  <rect x="100" y="340" width="185" height="172" rx="14" fill="white" opacity="0.95"/>
+  <rect x="112" y="352" width="161" height="108" rx="9" fill="#FDF2F8"/>
+  <circle cx="193" cy="406" r="30" fill="#DB2777" opacity="0.25"/>
+  <rect x="112" y="468" width="100" height="9" rx="4" fill="#BE185D" opacity="0.35"/>
+  <rect x="112" y="482" width="72" height="9" rx="4" fill="#DB2777"/>
+  <rect x="100" y="333" width="52" height="19" rx="9" fill="#DB2777"/>
+  <text x="126" y="346" font-size="8" font-weight="700" fill="white" text-anchor="middle">NEW</text>
+  <rect x="312" y="340" width="185" height="172" rx="14" fill="white" opacity="0.95"/>
+  <rect x="324" y="352" width="161" height="108" rx="9" fill="#EC4899"/>
+  <circle cx="405" cy="406" r="30" fill="#BE185D" opacity="0.18"/>
+  <rect x="324" y="468" width="100" height="9" rx="4" fill="#BE185D" opacity="0.35"/>
+  <rect x="324" y="482" width="72" height="9" rx="4" fill="#DB2777"/>
+  <rect x="312" y="333" width="52" height="19" rx="9" fill="#BE185D"/>
+  <text x="338" y="346" font-size="8" font-weight="700" fill="white" text-anchor="middle">SALE</text>
+  <rect x="524" y="340" width="185" height="172" rx="14" fill="white" opacity="0.95"/>
+  <rect x="536" y="352" width="161" height="108" rx="9" fill="#BE185D" opacity="0.22"/>
+  <circle cx="617" cy="406" r="30" fill="#EC4899" opacity="0.65"/>
+  <rect x="536" y="468" width="100" height="9" rx="4" fill="#BE185D" opacity="0.35"/>
+  <rect x="536" y="482" width="72" height="9" rx="4" fill="#DB2777"/>
+  <rect x="100" y="532" width="185" height="172" rx="14" fill="white" opacity="0.95"/>
+  <rect x="112" y="544" width="161" height="108" rx="9" fill="#EC4899"/>
+  <circle cx="193" cy="598" r="30" fill="#DB2777" opacity="0.20"/>
+  <rect x="112" y="660" width="100" height="9" rx="4" fill="#BE185D" opacity="0.35"/>
+  <rect x="112" y="674" width="72" height="9" rx="4" fill="#DB2777"/>
+  <rect x="312" y="532" width="185" height="172" rx="14" fill="white" opacity="0.95"/>
+  <rect x="324" y="544" width="161" height="108" rx="9" fill="#FDF2F8"/>
+  <circle cx="405" cy="598" r="30" fill="#BE185D" opacity="0.25"/>
+  <rect x="324" y="660" width="100" height="9" rx="4" fill="#BE185D" opacity="0.35"/>
+  <rect x="324" y="674" width="72" height="9" rx="4" fill="#DB2777"/>
+  <rect x="524" y="532" width="185" height="172" rx="14" fill="white" opacity="0.95"/>
+  <rect x="536" y="544" width="161" height="108" rx="9" fill="#DB2777" opacity="0.18"/>
+  <circle cx="617" cy="598" r="30" fill="#DB2777" opacity="0.35"/>
+  <rect x="536" y="660" width="100" height="9" rx="4" fill="#BE185D" opacity="0.35"/>
+  <rect x="536" y="674" width="72" height="9" rx="4" fill="#DB2777"/>
+  <rect x="100" y="724" width="185" height="100" rx="14" fill="white" opacity="0.45"/>
+  <rect x="312" y="724" width="185" height="100" rx="14" fill="white" opacity="0.45"/>
+  <rect x="524" y="724" width="185" height="100" rx="14" fill="white" opacity="0.45"/>
+  <circle cx="391" cy="856" r="7" fill="#DB2777"/>
+  <circle cx="413" cy="856" r="7" fill="#DB2777" opacity="0.45"/>
+  <circle cx="435" cy="856" r="7" fill="#DB2777" opacity="0.22"/>
 </svg>
