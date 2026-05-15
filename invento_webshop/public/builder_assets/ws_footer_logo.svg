@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126 56">
   <text x="4" y="34" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="26" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">INVENTO</text>
-  <text x="5" y="50" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="9"  font-weight="600" fill="#DC2626"       letter-spacing="4">WEBSHOP</text>
-  <rect x="5" y="53" width="116" height="2" fill="#DC2626" opacity="0.7"/>
+  <text x="5" y="50" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="9"  font-weight="600" fill="#D97706"       letter-spacing="4">WEBSHOP</text>
+  <rect x="5" y="53" width="116" height="2" fill="#D97706" opacity="0.7"/>
 </svg>

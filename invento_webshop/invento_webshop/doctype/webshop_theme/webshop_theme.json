@@ -8,11 +8,6 @@
  "field_order": [
   "theme_name",
   "status",
-  "branding_section",
-  "logo",
-  "footer_logo",
-  "column_break_footer_logo",
-  "why_us_bg",
   "theme_section",
   "theme_primary",
   "column_break_theme",
@@ -20,13 +15,13 @@
   "column_break_theme2",
   "theme_bg",
   "button_colors_section",
-  "btn_color",
-  "column_break_btn",
   "btn_bg_color",
+  "column_break_btn",
+  "btn_color",
   "column_break_btn2",
-  "btn_hover_color",
-  "column_break_btn3",
   "btn_hover_bg_color",
+  "column_break_btn3",
+  "btn_hover_color",
   "colors_section",
   "primary_color",
   "column_break_colors",
@@ -45,6 +40,11 @@
   "warm_bg_color",
   "column_break_bg2",
   "secondary_bg_color",
+  "branding_section",
+  "logo",
+  "footer_logo",
+  "column_break_footer_logo",
+  "why_us_bg",
   "carousel_section",
   "carousel_image_1",
   "column_break_rqog",
@@ -52,16 +52,18 @@
   "column_break_fafj",
   "carousel_image_3",
   "custom_images_section",
-  "custom_images"
+  "custom_images",
+  "theme_help_section",
+  "sample"
  ],
  "fields": [
   {
+   "bold": 1,
    "fieldname": "theme_name",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Theme Name",
-   "reqd": 1,
-   "bold": 1
+   "reqd": 1
   },
   {
    "default": "Not Applied",
@@ -73,43 +75,16 @@
    "read_only": 1
   },
   {
-   "fieldname": "branding_section",
-   "fieldtype": "Section Break",
-   "label": "Branding"
-  },
-  {
-   "fieldname": "logo",
-   "fieldtype": "Attach Image",
-   "label": "Logo",
-   "description": "Navbar logo — auto-generated from theme colors on Apply"
-  },
-  {
-   "fieldname": "footer_logo",
-   "fieldtype": "Attach Image",
-   "label": "Footer Logo",
-   "description": "Logo shown in the footer (white version for dark backgrounds) — auto-generated on Apply"
-  },
-  {
-   "fieldname": "column_break_footer_logo",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "why_us_bg",
-   "fieldtype": "Attach Image",
-   "label": "\"What Makes Us Different\" Background",
-   "description": "Background image for the Why Us section — auto-generated on Apply"
-  },
-  {
    "fieldname": "theme_section",
    "fieldtype": "Section Break",
-   "label": "Theme Colors",
-   "description": "Optional — set these 3 base colors to auto-generate all brand, text and background colors below. Leave blank to keep existing colors."
+   "label": "Quick Setup — Base Colors",
+   "description": "Set these 3 colors and click <b>Apply Theme</b> — all brand, text and background shades below will be auto-generated. You can still override them individually."
   },
   {
    "fieldname": "theme_primary",
    "fieldtype": "Color",
    "label": "Primary / Brand Color",
-   "description": "Derives: Primary Color, Hover, Light, Faint"
+   "description": "Your brand accent color. Auto-derives: Primary, Hover (dark), Hover (light), Faint"
   },
   {
    "fieldname": "column_break_theme",
@@ -118,8 +93,8 @@
   {
    "fieldname": "theme_text",
    "fieldtype": "Color",
-   "label": "Text Color",
-   "description": "Derives: Primary Text, Text Hover"
+   "label": "Main Text Color",
+   "description": "Used for headings and body text. Auto-derives: Primary Text, Text Hover"
   },
   {
    "fieldname": "column_break_theme2",
@@ -128,65 +103,69 @@
   {
    "fieldname": "theme_bg",
    "fieldtype": "Color",
-   "label": "Background Color",
-   "description": "Derives: Light BG, Warm BG, Secondary BG"
+   "label": "Page Background Color",
+   "description": "Base page background. Auto-derives: Light BG, Warm BG, Secondary BG"
   },
   {
    "fieldname": "button_colors_section",
    "fieldtype": "Section Break",
-   "label": "Button Colors"
+   "label": "Button Colors",
+   "description": "Colors for all call-to-action buttons across the webshop (Add to Cart, Contact, Apply, etc.)"
   },
   {
-   "default": "#171307",
-   "fieldname": "btn_color",
+   "default": "#FFED00",
+   "fieldname": "btn_bg_color",
    "fieldtype": "Color",
-   "label": "Button Text Color",
-   "description": "Text color on buttons"
+   "label": "Button Background",
+   "description": "Fill color of buttons in their default state"
   },
   {
    "fieldname": "column_break_btn",
    "fieldtype": "Column Break"
   },
   {
-   "default": "#FFED00",
-   "fieldname": "btn_bg_color",
+   "default": "#171307",
+   "fieldname": "btn_color",
    "fieldtype": "Color",
-   "label": "Button Background Color",
-   "description": "Background color of buttons"
+   "label": "Button Text",
+   "description": "Label/icon color inside buttons"
   },
   {
    "fieldname": "column_break_btn2",
    "fieldtype": "Column Break"
   },
   {
-   "default": "#FFFFFF",
-   "fieldname": "btn_hover_color",
+   "default": "#D5C600",
+   "fieldname": "btn_hover_bg_color",
    "fieldtype": "Color",
-   "label": "Button Hover Text Color",
-   "description": "Text color on button hover"
+   "label": "Button Hover Background",
+   "description": "Fill color when hovering over a button"
   },
   {
    "fieldname": "column_break_btn3",
    "fieldtype": "Column Break"
   },
   {
-   "default": "#D5C600",
-   "fieldname": "btn_hover_bg_color",
+   "default": "#FFFFFF",
+   "fieldname": "btn_hover_color",
    "fieldtype": "Color",
-   "label": "Button Hover Background Color",
-   "description": "Background color on button hover"
+   "label": "Button Hover Text",
+   "description": "Label color when hovering over a button"
   },
   {
+   "collapsible": 1,
+   "collapsed": 1,
    "fieldname": "colors_section",
    "fieldtype": "Section Break",
-   "label": "Brand Colors"
+   "label": "Brand Colors (Advanced)",
+   "description": "Auto-filled from Primary / Brand Color above. Override manually if needed."
   },
   {
    "default": "#FFED00",
    "fieldname": "primary_color",
    "fieldtype": "Color",
    "label": "Primary Color",
-   "description": "Main accent — buttons, highlights"
+   "description": "Main accent — badges, borders, icon fills"
   },
   {
    "fieldname": "column_break_colors",
@@ -196,8 +175,8 @@
    "default": "#D5C600",
    "fieldname": "primary_color_hover",
    "fieldtype": "Color",
-   "label": "Primary Hover (Dark)",
-   "description": "Darker shade for hover/active states"
+   "label": "Primary Dark (Hover)",
+   "description": "Slightly darker shade for pressed/active states"
   },
   {
    "fieldname": "column_break_colors2",
@@ -207,8 +186,8 @@
    "default": "#FFF465",
    "fieldname": "primary_color_light",
    "fieldtype": "Color",
-   "label": "Primary Hover (Light)",
-   "description": "Lighter shade for hover tints"
+   "label": "Primary Light (Hover)",
+   "description": "Slightly lighter shade for hover tints and underlines"
   },
   {
    "fieldname": "column_break_colors3",
@@ -218,20 +197,23 @@
    "default": "#FFFBC5",
    "fieldname": "primary_color_faint",
    "fieldtype": "Color",
-   "label": "Primary Faint (Background)",
-   "description": "Very light primary tint for backgrounds"
+   "label": "Primary Faint (Background Tint)",
+   "description": "Very light primary tint — used in section backgrounds, pills, tags"
   },
   {
+   "collapsible": 1,
+   "collapsed": 1,
    "fieldname": "text_colors_section",
    "fieldtype": "Section Break",
-   "label": "Text Colors"
+   "label": "Text Colors (Advanced)",
+   "description": "Auto-filled from Main Text Color above."
   },
   {
    "default": "#171307",
    "fieldname": "primary_text_color",
    "fieldtype": "Color",
    "label": "Primary Text",
-   "description": "Main dark text and elements"
+   "description": "Main dark text — headings, prices, product titles"
   },
   {
    "fieldname": "column_break_text",
@@ -241,20 +223,23 @@
    "default": "#52504C",
    "fieldname": "primary_text_hover",
    "fieldtype": "Color",
-   "label": "Text Hover",
-   "description": "Text color on hover states"
+   "label": "Text Hover / Muted",
+   "description": "Slightly lighter — subtitles, hover text, secondary labels"
   },
   {
+   "collapsible": 1,
+   "collapsed": 1,
    "fieldname": "bg_colors_section",
    "fieldtype": "Section Break",
-   "label": "Background Colors"
+   "label": "Background Colors (Advanced)",
+   "description": "Auto-filled from Page Background Color above."
   },
   {
    "default": "#FFFDF5",
    "fieldname": "light_bg_color",
    "fieldtype": "Color",
    "label": "Light Background",
-   "description": "Cream/light background sections"
+   "description": "Cream/off-white — alternating section backgrounds"
   },
   {
    "fieldname": "column_break_bg",
@@ -265,7 +250,7 @@
    "fieldname": "warm_bg_color",
    "fieldtype": "Color",
    "label": "Warm Background",
-   "description": "Warm cream background sections"
+   "description": "Warm cream — used in product grids, cards backgrounds"
   },
   {
    "fieldname": "column_break_bg2",
@@ -276,12 +261,41 @@
    "fieldname": "secondary_bg_color",
    "fieldtype": "Color",
    "label": "Secondary Background",
-   "description": "Light gray background sections"
+   "description": "Light gray — footer, filter panels, input backgrounds"
+  },
+  {
+   "fieldname": "branding_section",
+   "fieldtype": "Section Break",
+   "label": "Branding Assets",
+   "description": "Logos and section backgrounds. All images marked <i>auto-generated</i> are re-created automatically every time you Apply Theme."
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Navbar Logo",
+   "description": "Shown in the top navigation bar — auto-generated from theme colors on Apply"
+  },
+  {
+   "fieldname": "footer_logo",
+   "fieldtype": "Attach Image",
+   "label": "Footer Logo",
+   "description": "White/inverted version shown in the dark footer — auto-generated on Apply"
+  },
+  {
+   "fieldname": "column_break_footer_logo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "why_us_bg",
+   "fieldtype": "Attach Image",
+   "label": "\"What Makes Us Different\" Background",
+   "description": "Decorative background for the Why Us section — auto-generated SVG on Apply"
   },
   {
    "fieldname": "carousel_section",
    "fieldtype": "Section Break",
-   "label": "Hero Carousel Images"
+   "label": "Hero Carousel Images",
+   "description": "Up to 3 banner images shown in the home page carousel slider. Recommended size: 1280×480 px."
   },
   {
    "fieldname": "carousel_image_1",
@@ -309,13 +323,26 @@
   {
    "fieldname": "custom_images_section",
    "fieldtype": "Section Break",
-   "label": "Custom Images"
+   "label": "Custom Images",
+   "description": "Additional image assets used by the webshop pages (product banners, section backgrounds, etc.)"
   },
   {
    "fieldname": "custom_images",
    "fieldtype": "Table",
    "label": "Custom Images",
    "options": "Webshop Image Asset"
+  },
+  {
+   "collapsible": 1,
+   "collapsed": 1,
+   "fieldname": "theme_help_section",
+   "fieldtype": "Section Break",
+   "label": "How to Use This Theme"
+  },
+  {
+   "fieldname": "sample",
+   "fieldtype": "HTML",
+   "label": "Theme Help"
   }
  ],
  "grid_page_length": 50,
@@ -323,7 +350,7 @@
  "indicator_fieldname": "status",
  "issingle": 0,
  "links": [],
- "modified": "2026-05-14 00:00:00.000000",
+ "modified": "2026-05-15 00:00:00.000000",
  "modified_by": "Administrator",
  "module": "Invento Webshop",
  "name": "Webshop Theme",

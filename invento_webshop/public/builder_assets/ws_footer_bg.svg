@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 979" preserveAspectRatio="xMidYMid slice">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#530C0C"/>
-      <stop offset="100%" stop-color="#841616"/>
+      <stop offset="0%" stop-color="#502504"/>
+      <stop offset="100%" stop-color="#824703"/>
     </linearGradient>
   </defs>
   <rect width="1920" height="979" fill="url(#bg)"/>
   <!-- Accent line top -->
-  <rect x="0" y="0" width="1920" height="4" fill="#DC2626"/>
+  <rect x="0" y="0" width="1920" height="4" fill="#D97706"/>
   <!-- Decorative circles -->
-  <circle cx="200"  cy="979" r="600" fill="#DC2626" opacity="0.06"/>
-  <circle cx="1920" cy="0"   r="500" fill="#DC2626" opacity="0.06"/>
-  <circle cx="960"  cy="490" r="800" fill="#EF4444" opacity="0.04"/>
+  <circle cx="200"  cy="979" r="600" fill="#D97706" opacity="0.06"/>
+  <circle cx="1920" cy="0"   r="500" fill="#D97706" opacity="0.06"/>
+  <circle cx="960"  cy="490" r="800" fill="#F59E0B" opacity="0.04"/>
   <!-- Small accent dots -->
-  <circle cx="400"  cy="100" r="30" fill="#EF4444" opacity="0.12"/>
-  <circle cx="800"  cy="200" r="18" fill="#EF4444" opacity="0.10"/>
-  <circle cx="1200" cy="80"  r="24" fill="#EF4444" opacity="0.10"/>
-  <circle cx="1600" cy="160" r="20" fill="#EF4444" opacity="0.10"/>
-  <circle cx="1800" cy="300" r="14" fill="#EF4444" opacity="0.10"/>
+  <circle cx="400"  cy="100" r="30" fill="#F59E0B" opacity="0.12"/>
+  <circle cx="800"  cy="200" r="18" fill="#F59E0B" opacity="0.10"/>
+  <circle cx="1200" cy="80"  r="24" fill="#F59E0B" opacity="0.10"/>
+  <circle cx="1600" cy="160" r="20" fill="#F59E0B" opacity="0.10"/>
+  <circle cx="1800" cy="300" r="14" fill="#F59E0B" opacity="0.10"/>
   <!-- Large INVENTO watermark text (replaces old Buzz branding) -->
   <text x="960" y="620"
         font-family="system-ui,-apple-system,'Segoe UI',sans-serif"
