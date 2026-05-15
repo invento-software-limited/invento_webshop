@@ -1562,7 +1562,7 @@
           "href": "/home"
          },
          "baseStyles": {
-          "color": "var(--btn-color)",
+          "color": "var(--primary-text-color)",
           "fontFamily": "IBM Plex Sans",
           "fontSize": "16px",
           "fontWeight": "500",
@@ -1691,7 +1691,7 @@
       {
        "attributes": {},
        "baseStyles": {
-        "color": "rgb(0, 0, 0)",
+        "color": "var(--primary-text-color)",
         "fontFamily": "IBM Plex Sans",
         "fontSize": "35px",
         "fontWeight": "500",
@@ -1750,8 +1750,8 @@
          "baseStyles": {
           "alignItems": "center",
           "alignSelf": "stretch",
-          "border": "1px solid  var(--primary-text-color)",
-          "borderColor": "#c8c8c8",
+          "border": "1px solid var(--primary-color-faint)",
+          "borderColor": "var(--primary-color-faint)",
           "borderRadius": "5px",
           "borderStyle": "solid",
           "borderWidth": "1px",
@@ -1787,7 +1787,7 @@
              "attributes": {},
              "baseStyles": {
               "alignSelf": "stretch",
-              "color": "rgb(0, 0, 0)",
+              "color": "var(--primary-text-color)",
               "fontFamily": "IBM Plex Sans",
               "fontSize": "30px",
               "fontWeight": "500",
@@ -2296,8 +2296,8 @@
          "baseStyles": {
           "alignItems": "center",
           "alignSelf": "stretch",
-          "border": "1px solid  var(--primary-text-color)",
-          "borderColor": "#c8c8c8",
+          "border": "1px solid var(--primary-color-faint)",
+          "borderColor": "var(--primary-color-faint)",
           "borderRadius": "5px",
           "borderStyle": "solid",
           "borderWidth": "1px",
@@ -2333,7 +2333,7 @@
              "attributes": {},
              "baseStyles": {
               "alignSelf": "stretch",
-              "color": "rgb(0, 0, 0)",
+              "color": "var(--primary-text-color)",
               "fontFamily": "IBM Plex Sans",
               "fontSize": "30px",
               "fontWeight": "500",
@@ -2842,8 +2842,8 @@
          "baseStyles": {
           "alignItems": "center",
           "alignSelf": "stretch",
-          "border": "1px solid  var(--primary-text-color)",
-          "borderColor": "#c8c8c8",
+          "border": "1px solid var(--primary-color-faint)",
+          "borderColor": "var(--primary-color-faint)",
           "borderRadius": "5px",
           "borderStyle": "solid",
           "borderWidth": "1px",
@@ -2879,7 +2879,7 @@
              "attributes": {},
              "baseStyles": {
               "alignSelf": "stretch",
-              "color": "rgb(0, 0, 0)",
+              "color": "var(--primary-text-color)",
               "fontFamily": "IBM Plex Sans",
               "fontSize": "30px",
               "fontWeight": "500",

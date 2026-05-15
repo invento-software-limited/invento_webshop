@@ -1545,7 +1545,7 @@
           "href": "/home"
          },
          "baseStyles": {
-          "color": "var(--btn-color)",
+          "color": "var(--primary-text-color)",
           "fontFamily": "IBM Plex Sans",
           "fontSize": "16px",
           "fontWeight": "500",
@@ -1674,7 +1674,7 @@
       {
        "attributes": {},
        "baseStyles": {
-        "color": "rgb(0, 0, 0)",
+        "color": "var(--primary-text-color)",
         "fontFamily": "IBM Plex Sans",
         "fontSize": "35px",
         "fontWeight": "500",
@@ -1751,7 +1751,7 @@
            },
            "baseStyles": {
             "alignItems": "center",
-            "backgroundColor": "rgb(244, 244, 244)",
+            "backgroundColor": "var(--secondary-bg-color)",
             "borderRadius": "100px",
             "display": "flex",
             "gap": "15.116px",
@@ -1952,7 +1952,7 @@
            "attributes": {},
            "baseStyles": {
             "alignSelf": "stretch",
-            "color": "rgb(0, 0, 0)",
+            "color": "var(--primary-text-color)",
             "fontFamily": "IBM Plex Sans",
             "fontSize": "25px",
             "fontWeight": "500",
@@ -2006,8 +2006,8 @@
              },
              "baseStyles": {
               "alignItems": "center",
-              "border": "1px solid #C7C7C7",
-              "borderColor": "rgb(199, 199, 199)",
+              "border": "1px solid var(--primary-color-faint)",
+              "borderColor": "var(--primary-color-faint)",
               "borderRadius": "5px",
               "borderStyle": "solid",
               "borderWidth": "1px",
@@ -2020,7 +2020,8 @@
               "paddingBottom": "11px",
               "paddingLeft": "34px",
               "paddingRight": "34px",
-              "paddingTop": "11px"
+              "paddingTop": "11px",
+              "color": "var(--primary-text-color)"
              },
              "blockClientScript": "",
              "blockDataScript": "",
@@ -2097,7 +2098,9 @@
              "mobileStyles": {},
              "originalElement": "",
              "props": {},
-             "rawStyles": {},
+             "rawStyles": {
+              "hover:background-color": "var(--primary-color-faint)"
+             },
              "referenceBlockId": null,
              "tabletStyles": {},
              "visibilityCondition": null
@@ -2562,7 +2565,7 @@
               {
                "attributes": {},
                "baseStyles": {
-                "color": "rgb(0, 0, 0)",
+                "color": "var(--primary-text-color)",
                 "fontFamily": "IBM Plex Sans",
                 "fontSize": "30px",
                 "fontWeight": "500",
@@ -2596,7 +2599,7 @@
               {
                "attributes": {},
                "baseStyles": {
-                "color": "rgb(0, 0, 0)",
+                "color": "var(--primary-text-color)",
                 "fontFamily": "IBM Plex Sans",
                 "fontSize": "20px",
                 "fontWeight": "400",

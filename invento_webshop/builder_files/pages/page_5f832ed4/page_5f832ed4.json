@@ -1573,7 +1573,7 @@
             "href": "/home"
            },
            "baseStyles": {
-            "color": "var(--btn-color)",
+            "color": "var(--primary-text-color)",
             "fontFamily": "IBM Plex Sans",
             "fontSize": "16px",
             "fontWeight": "500",
@@ -1716,7 +1716,7 @@
            "attributes": {},
            "baseStyles": {
             "alignSelf": "stretch",
-            "color": "rgb(0, 0, 0)",
+            "color": "var(--primary-text-color)",
             "fontFamily": "IBM Plex Sans",
             "fontSize": "20px",
             "fontWeight": "400",
@@ -1751,7 +1751,7 @@
            "attributes": {},
            "baseStyles": {
             "alignSelf": "stretch",
-            "color": "rgb(0, 0, 0)",
+            "color": "var(--primary-text-color)",
             "fontFamily": "IBM Plex Sans",
             "fontSize": "20px",
             "fontWeight": "400",
@@ -1891,7 +1891,7 @@
             {
              "attributes": {},
              "baseStyles": {
-              "color": "rgb(0, 0, 0)",
+              "color": "var(--primary-text-color)",
               "fontFamily": "Roboto",
               "fontSize": "16px",
               "fontWeight": "500",
@@ -5871,7 +5871,7 @@
                           "alignItems": "center",
                           "backgroundColor": "var(--btn-bg)",
                           "borderRadius": "5px",
-                          "color": "#ffffff",
+                          "color": "var(--btn-color)",
                           "display": "flex",
                           "flexDirection": "column",
                           "justifyContent": "flex-start",
@@ -7171,7 +7171,8 @@
                   "gap": "10px",
                   "height": "43px",
                   "justifyContent": "center",
-                  "padding": "16px 48px"
+                  "padding": "16px 48px",
+                  "color": "var(--btn-color)"
                  },
                  "blockClientScript": "",
                  "blockDataScript": "",
@@ -7184,7 +7185,8 @@
                     "fontFamily": "Roboto",
                     "fontSize": "15px",
                     "fontWeight": "500",
-                    "lineHeight": "24px "
+                    "lineHeight": "24px ",
+                    "color": "var(--btn-color)"
                    },
                    "blockClientScript": "",
                    "blockDataScript": "",
@@ -7874,7 +7876,8 @@
                   "gap": "10px",
                   "height": "43px",
                   "justifyContent": "center",
-                  "padding": "16px 48px"
+                  "padding": "16px 48px",
+                  "color": "var(--btn-color)"
                  },
                  "blockClientScript": "",
                  "blockDataScript": "",
@@ -7887,7 +7890,8 @@
                     "fontFamily": "Roboto",
                     "fontSize": "15px",
                     "fontWeight": "500",
-                    "lineHeight": "24px "
+                    "lineHeight": "24px ",
+                    "color": "var(--btn-color)"
                    },
                    "blockClientScript": "",
                    "blockDataScript": "",
@@ -8014,7 +8018,7 @@
           {
            "attributes": {},
            "baseStyles": {
-            "backgroundColor": "rgb(255, 255, 255)",
+            "backgroundColor": "var(--light-bg-color)",
             "borderRadius": "4px",
             "boxShadow": "0px 1px 13px 0px rgba(0, 0, 0, 0.05)",
             "display": "flex",
@@ -8056,7 +8060,7 @@
               {
                "attributes": {},
                "baseStyles": {
-                "color": "#000000",
+                "color": "var(--primary-text-color)",
                 "fontFamily": "Roboto",
                 "fontSize": "20px",
                 "fontWeight": "500",
@@ -8097,7 +8101,8 @@
                 "gap": "10px",
                 "height": "43px",
                 "justifyContent": "center",
-                "padding": "16px 48px"
+                "padding": "16px 48px",
+                "color": "var(--btn-color)"
                },
                "blockClientScript": "",
                "blockDataScript": "",
@@ -8110,7 +8115,8 @@
                   "fontFamily": "Roboto",
                   "fontSize": "15px",
                   "fontWeight": "500",
-                  "lineHeight": "24px "
+                  "lineHeight": "24px ",
+                  "color": "var(--btn-color)"
                  },
                  "blockClientScript": "",
                  "blockDataScript": "",
@@ -8834,7 +8840,7 @@
                             {
                              "attributes": {},
                              "baseStyles": {
-                              "color": "rgb(0, 0, 0)",
+                              "color": "var(--primary-text-color)",
                               "fontFamily": "IBM Plex Sans",
                               "fontSize": "19px",
                               "fontWeight": "400",
@@ -8948,7 +8954,7 @@
                             {
                              "attributes": {},
                              "baseStyles": {
-                              "color": "rgb(0, 0, 0)",
+                              "color": "var(--primary-text-color)",
                               "fontFamily": "IBM Plex Sans",
                               "fontSize": "19px",
                               "fontWeight": "400",
@@ -9107,11 +9113,12 @@
                        "attributes": {},
                        "baseStyles": {
                         "alignItems": "center",
-                        "backgroundColor": "#ffffff",
+                        "backgroundColor": "var(--secondary-bg-color)",
                         "borderRadius": "4px",
                         "display": "flex",
                         "gap": "10px",
-                        "justifyContent": "center"
+                        "justifyContent": "center",
+                        "color": "var(--primary-text-color)"
                        },
                        "blockClientScript": "",
                        "blockDataScript": "",
@@ -9201,7 +9208,8 @@
                         "paddingBottom": "5px",
                         "paddingLeft": "18px",
                         "paddingRight": "18px",
-                        "paddingTop": "5px"
+                        "paddingTop": "5px",
+                        "color": "var(--btn-color)"
                        },
                        "blockClientScript": "",
                        "blockDataScript": "",
@@ -9214,7 +9222,8 @@
                           "fontFamily": "Roboto",
                           "fontSize": "14px",
                           "fontWeight": "500",
-                          "lineHeight": "24px "
+                          "lineHeight": "24px ",
+                          "color": "var(--btn-color)"
                          },
                          "blockClientScript": "",
                          "blockDataScript": "",
@@ -10063,7 +10072,7 @@
                             {
                              "attributes": {},
                              "baseStyles": {
-                              "color": "rgb(0, 0, 0)",
+                              "color": "var(--primary-text-color)",
                               "fontFamily": "IBM Plex Sans",
                               "fontSize": "19px",
                               "fontWeight": "400",
@@ -10177,7 +10186,7 @@
                             {
                              "attributes": {},
                              "baseStyles": {
-                              "color": "rgb(0, 0, 0)",
+                              "color": "var(--primary-text-color)",
                               "fontFamily": "IBM Plex Sans",
                               "fontSize": "19px",
                               "fontWeight": "400",
@@ -10336,12 +10345,13 @@
                        "attributes": {},
                        "baseStyles": {
                         "alignItems": "center",
-                        "backgroundColor": "#ffffff",
+                        "backgroundColor": "var(--secondary-bg-color)",
                         "borderRadius": "4px",
                         "display": "flex",
                         "gap": "10px",
                         "height": "43px",
-                        "justifyContent": "center"
+                        "justifyContent": "center",
+                        "color": "var(--primary-text-color)"
                        },
                        "blockClientScript": "",
                        "blockDataScript": "",
@@ -10431,7 +10441,8 @@
                         "paddingBottom": "5px",
                         "paddingLeft": "18px",
                         "paddingRight": "18px",
-                        "paddingTop": "5px"
+                        "paddingTop": "5px",
+                        "color": "var(--btn-color)"
                        },
                        "blockClientScript": "",
                        "blockDataScript": "",
@@ -10444,7 +10455,8 @@
                           "fontFamily": "Roboto",
                           "fontSize": "14px",
                           "fontWeight": "500",
-                          "lineHeight": "24px "
+                          "lineHeight": "24px ",
+                          "color": "var(--btn-color)"
                          },
                          "blockClientScript": "",
                          "blockDataScript": "",
@@ -12317,7 +12329,7 @@
                    "attributes": {},
                    "baseStyles": {
                     "alignItems": "center",
-                    "borderColor": "#DEDEDE",
+                    "borderColor": "var(--primary-color-faint)",
                     "borderRadius": "4px",
                     "borderStyle": "solid",
                     "borderWidth": "1px",
@@ -12325,7 +12337,9 @@
                     "gap": "10px",
                     "height": "43px",
                     "justifyContent": "center",
-                    "padding": "16px 48px"
+                    "padding": "16px 48px",
+                    "backgroundColor": "var(--secondary-bg-color)",
+                    "color": "var(--primary-text-color)"
                    },
                    "blockClientScript": "",
                    "blockDataScript": "",
@@ -12399,7 +12413,8 @@
                     "gap": "10px",
                     "height": "43px",
                     "justifyContent": "center",
-                    "padding": "16px 48px"
+                    "padding": "16px 48px",
+                    "color": "var(--btn-color)"
                    },
                    "blockClientScript": "",
                    "blockDataScript": "",
@@ -12412,7 +12427,8 @@
                       "fontFamily": "Roboto",
                       "fontSize": "15px",
                       "fontWeight": "500",
-                      "lineHeight": "24px "
+                      "lineHeight": "24px ",
+                      "color": "var(--btn-color)"
                      },
                      "blockClientScript": "",
                      "blockDataScript": "",

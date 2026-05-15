@@ -28,8 +28,9 @@ STABLE = {
 	"carousel_1":   "ws_carousel_1.svg",
 	"carousel_2":   "ws_carousel_2.svg",
 	"carousel_3":   "ws_carousel_3.svg",
-	"footer_bg":    "ws_footer_bg.svg",       # referenced in footer.json
-	"svg_icon":     "ws_diff_icon.svg",       # What Makes Us Different inline icon
+	"footer_bg":        "ws_footer_bg.svg",       # referenced in footer.json
+	"svg_icon":         "ws_diff_icon.svg",       # What Makes Us Different inline icon
+	"opening_hours_bg": "ws_opening_hours_bg.svg",
 }
 
 FONT = "system-ui,-apple-system,'Segoe UI',sans-serif"
@@ -153,6 +154,9 @@ def _write_all_svgs(theme):
 	# 5. Footer background — dark SVG that contrasts with white footer text
 	_write(STABLE["footer_bg"], _svg_footer_bg(p, d, l))
 
+	# 6. Opening Hours decorative clock background
+	_write(STABLE["opening_hours_bg"], _svg_opening_hours_bg(p, d, l, f))
+
 	# 6. Point navbar/mobile-nav directly to this theme's own logo file
 	#    (different URL per theme → browser never serves a stale cached version)
 	_update_navbar_logo(f"/assets/invento_webshop/builder_assets/{STABLE['logo']}")
@@ -233,6 +237,61 @@ def _svg_section_bg(p, l, f):
   <circle cx="900" cy="448" r="500"  fill="{p}" opacity="0.04"/>
   <!-- Top accent line -->
   <rect x="0" y="0" width="1800" height="3" fill="{p}" opacity="0.25"/>
+</svg>"""
+
+
+def _svg_opening_hours_bg(p, d, l, f):
+	"""
+	Sunrise starburst for the Opening Hours panel.
+	Sun fully inside viewBox (centre 210,310 r=60). Concentric rings + fanned rays
+	all within 420×380 bounds so the complete image is always visible.
+	Ray endpoints computed for angle-from-vertical θ, length L:
+	  end = (210 + L·sin θ,  310 − L·cos θ)
+	"""
+	return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 380" fill="none">
+  <!-- Concentric rings centred on sun -->
+  <circle cx="210" cy="310" r="240" stroke="{p}" stroke-width="1"   fill="none" opacity="0.08"/>
+  <circle cx="210" cy="310" r="190" stroke="{l}" stroke-width="1"   fill="none" opacity="0.11"/>
+  <circle cx="210" cy="310" r="145" stroke="{p}" stroke-width="1.5" fill="none" opacity="0.15"/>
+  <circle cx="210" cy="310" r="100" stroke="{l}" stroke-width="1.5" fill="none" opacity="0.20"/>
+  <!-- Sun body — fully within viewBox (bottom at y=370) -->
+  <circle cx="210" cy="310" r="60" fill="{f}" opacity="0.65"/>
+  <circle cx="210" cy="310" r="58" stroke="{p}" stroke-width="2.5" fill="none" opacity="0.30"/>
+  <circle cx="210" cy="310" r="44" stroke="{l}" stroke-width="1"   fill="none" opacity="0.22"/>
+  <!-- Primary rays (thick) — θ = 0°, ±15°, ±45° -->
+  <line x1="210" y1="310" x2="210" y2="55"  stroke="{p}" stroke-width="3"   stroke-linecap="round" opacity="0.48"/>
+  <line x1="210" y1="310" x2="272" y2="88"  stroke="{p}" stroke-width="2.5" stroke-linecap="round" opacity="0.44"/>
+  <line x1="210" y1="310" x2="148" y2="88"  stroke="{p}" stroke-width="2.5" stroke-linecap="round" opacity="0.44"/>
+  <line x1="210" y1="310" x2="344" y2="180" stroke="{p}" stroke-width="2"   stroke-linecap="round" opacity="0.36"/>
+  <line x1="210" y1="310" x2="76"  y2="180" stroke="{p}" stroke-width="2"   stroke-linecap="round" opacity="0.36"/>
+  <!-- Secondary rays — θ = ±30°, ±60°, ±75° -->
+  <line x1="210" y1="310" x2="320" y2="127" stroke="{l}" stroke-width="1.5" stroke-linecap="round" opacity="0.30"/>
+  <line x1="210" y1="310" x2="100" y2="127" stroke="{l}" stroke-width="1.5" stroke-linecap="round" opacity="0.30"/>
+  <line x1="210" y1="310" x2="383" y2="238" stroke="{l}" stroke-width="1.2" stroke-linecap="round" opacity="0.24"/>
+  <line x1="210" y1="310" x2="37"  y2="238" stroke="{l}" stroke-width="1.2" stroke-linecap="round" opacity="0.24"/>
+  <line x1="210" y1="310" x2="398" y2="278" stroke="{l}" stroke-width="1"   stroke-linecap="round" opacity="0.18"/>
+  <line x1="210" y1="310" x2="22"  y2="278" stroke="{l}" stroke-width="1"   stroke-linecap="round" opacity="0.18"/>
+  <!-- Tertiary rays — hairline fill (±22°, ±37°, ±52°, ±67°) -->
+  <line x1="210" y1="310" x2="286" y2="73"  stroke="{p}" stroke-width="0.8" stroke-linecap="round" opacity="0.20"/>
+  <line x1="210" y1="310" x2="134" y2="73"  stroke="{p}" stroke-width="0.8" stroke-linecap="round" opacity="0.20"/>
+  <line x1="210" y1="310" x2="332" y2="152" stroke="{d}" stroke-width="0.8" stroke-linecap="round" opacity="0.17"/>
+  <line x1="210" y1="310" x2="88"  y2="152" stroke="{d}" stroke-width="0.8" stroke-linecap="round" opacity="0.17"/>
+  <line x1="210" y1="310" x2="367" y2="213" stroke="{l}" stroke-width="0.8" stroke-linecap="round" opacity="0.15"/>
+  <line x1="210" y1="310" x2="53"  y2="213" stroke="{l}" stroke-width="0.8" stroke-linecap="round" opacity="0.15"/>
+  <line x1="210" y1="310" x2="393" y2="257" stroke="{l}" stroke-width="0.8" stroke-linecap="round" opacity="0.13"/>
+  <line x1="210" y1="310" x2="27"  y2="257" stroke="{l}" stroke-width="0.8" stroke-linecap="round" opacity="0.13"/>
+  <!-- Sun centre cap -->
+  <circle cx="210" cy="310" r="9" fill="{p}" opacity="0.85"/>
+  <circle cx="210" cy="310" r="4" fill="{f}"/>
+  <!-- Floating accent dots -->
+  <circle cx="72"  cy="48"  r="5" fill="{p}" opacity="0.26"/>
+  <circle cx="352" cy="42"  r="4" fill="{l}" opacity="0.30"/>
+  <circle cx="22"  cy="155" r="3" fill="{p}" opacity="0.20"/>
+  <circle cx="400" cy="148" r="3" fill="{l}" opacity="0.20"/>
+  <circle cx="42"  cy="265" r="4" fill="{l}" opacity="0.16"/>
+  <circle cx="378" cy="260" r="3" fill="{p}" opacity="0.16"/>
+  <circle cx="155" cy="30"  r="3" fill="{d}" opacity="0.22"/>
+  <circle cx="272" cy="34"  r="3" fill="{d}" opacity="0.22"/>
 </svg>"""
 
 

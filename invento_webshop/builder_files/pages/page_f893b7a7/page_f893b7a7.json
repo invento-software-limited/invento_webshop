@@ -1562,7 +1562,7 @@
           "href": "/home"
          },
          "baseStyles": {
-          "color": "var(--btn-color)",
+          "color": "var(--primary-text-color)",
           "fontFamily": "IBM Plex Sans",
           "fontSize": "16px",
           "fontWeight": "500",
@@ -1690,7 +1690,7 @@
       {
        "attributes": {},
        "baseStyles": {
-        "color": "rgb(0, 0, 0)",
+        "color": "var(--primary-text-color)",
         "fontFamily": "IBM Plex Sans",
         "fontSize": "35px",
         "fontWeight": "500",
@@ -1748,7 +1748,8 @@
           "display": "flex",
           "height": "45px",
           "justifyContent": "center",
-          "padding": "12px 57px"
+          "padding": "12px 57px",
+          "color": "var(--btn-color)"
          },
          "blockClientScript": "",
          "blockDataScript": "",
@@ -1832,7 +1833,8 @@
           "display": "flex",
           "height": "45px",
           "justifyContent": "center",
-          "padding": "12px 57px"
+          "padding": "12px 57px",
+          "color": "var(--primary-text-color)"
          },
          "blockClientScript": "",
          "blockDataScript": "",
@@ -1902,7 +1904,9 @@
          },
          "originalElement": "",
          "props": {},
-         "rawStyles": {},
+         "rawStyles": {
+          "hover:background": "var(--primary-color-faint)"
+         },
          "referenceBlockId": null,
          "tabletStyles": {},
          "visibilityCondition": null
@@ -1916,7 +1920,8 @@
           "display": "flex",
           "height": "45px",
           "justifyContent": "center",
-          "padding": "12px 57px"
+          "padding": "12px 57px",
+          "color": "var(--primary-text-color)"
          },
          "blockClientScript": "",
          "blockDataScript": "",
@@ -1986,7 +1991,9 @@
          },
          "originalElement": "",
          "props": {},
-         "rawStyles": {},
+         "rawStyles": {
+          "hover:background": "var(--primary-color-faint)"
+         },
          "referenceBlockId": null,
          "tabletStyles": {},
          "visibilityCondition": null
@@ -2165,7 +2172,7 @@
          "attributes": {},
          "baseStyles": {
           "alignSelf": "stretch",
-          "color": "rgb(0, 0, 0)",
+          "color": "var(--primary-text-color)",
           "fontFamily": "IBM Plex Sans",
           "fontSize": "16px",
           "fontWeight": "400",
@@ -2261,7 +2268,7 @@
           {
            "attributes": {},
            "baseStyles": {
-            "borderColor": "#cccccc",
+            "borderColor": "var(--primary-color-faint)",
             "borderRadius": "5px",
             "borderStyle": "solid",
             "borderWidth": "1px",
@@ -2397,7 +2404,7 @@
                 "placeholder": "First Name *"
                },
                "baseStyles": {
-                "borderColor": "#c9c9c9",
+                "borderColor": "var(--primary-color-faint)",
                 "borderRadius": "5px",
                 "borderStyle": "solid",
                 "borderWidth": "1px",
@@ -2447,7 +2454,7 @@
                 "placeholder": "Last Name"
                },
                "baseStyles": {
-                "borderColor": "#c9c9c9",
+                "borderColor": "var(--primary-color-faint)",
                 "borderRadius": "5px",
                 "borderStyle": "solid",
                 "borderWidth": "1px",
@@ -2534,7 +2541,7 @@
                 "type": "text"
                },
                "baseStyles": {
-                "borderColor": "#c9c9c9",
+                "borderColor": "var(--primary-color-faint)",
                 "borderRadius": "5px",
                 "borderStyle": "solid",
                 "borderWidth": "1px",
@@ -2626,7 +2633,7 @@
                 "type": "email"
                },
                "baseStyles": {
-                "borderColor": "#c9c9c9",
+                "borderColor": "var(--primary-color-faint)",
                 "borderRadius": "5px",
                 "borderStyle": "solid",
                 "borderWidth": "1px",
@@ -2806,7 +2813,7 @@
                 "type": "password"
                },
                "baseStyles": {
-                "borderColor": "#c9c9c9",
+                "borderColor": "var(--primary-color-faint)",
                 "borderRadius": "5px",
                 "borderStyle": "solid",
                 "borderWidth": "1px",
@@ -2853,7 +2860,7 @@
                 "type": "password"
                },
                "baseStyles": {
-                "borderColor": "#c9c9c9",
+                "borderColor": "var(--primary-color-faint)",
                 "borderRadius": "5px",
                 "borderStyle": "solid",
                 "borderWidth": "1px",
@@ -3104,7 +3111,7 @@
           {
            "attributes": {},
            "baseStyles": {
-            "borderColor": "#cccccc",
+            "borderColor": "var(--primary-color-faint)",
             "borderRadius": "5px",
             "borderStyle": "solid",
             "borderWidth": "1px",
@@ -3263,7 +3270,7 @@
                   "type": "text"
                  },
                  "baseStyles": {
-                  "borderColor": "#c9c9c9",
+                  "borderColor": "var(--primary-color-faint)",
                   "borderRadius": "5px",
                   "borderStyle": "solid",
                   "borderWidth": "1px",
@@ -3355,7 +3362,7 @@
                   "type": "text"
                  },
                  "baseStyles": {
-                  "borderColor": "#c9c9c9",
+                  "borderColor": "var(--primary-color-faint)",
                   "borderRadius": "5px",
                   "borderStyle": "solid",
                   "borderWidth": "1px",
@@ -3485,7 +3492,7 @@
                   "type": "text"
                  },
                  "baseStyles": {
-                  "borderColor": "#c9c9c9",
+                  "borderColor": "var(--primary-color-faint)",
                   "borderRadius": "5px",
                   "borderStyle": "solid",
                   "borderWidth": "1px",
@@ -4516,7 +4523,7 @@
                         {
                          "attributes": {},
                          "baseStyles": {
-                          "color": "rgb(0, 0, 0)",
+                          "color": "var(--primary-text-color)",
                           "display": "flex",
                           "flexDirection": "column",
                           "flexShrink": 0,
@@ -4636,7 +4643,7 @@
                         {
                          "attributes": {},
                          "baseStyles": {
-                          "color": "rgb(0, 0, 0)",
+                          "color": "var(--primary-text-color)",
                           "display": "flex",
                           "flexDirection": "column",
                           "flexShrink": 0,
@@ -4885,7 +4892,8 @@
                   "height": "60px",
                   "justifyContent": "center",
                   "padding": "14px 15px",
-                  "width": "100%"
+                  "width": "100%",
+                  "color": "var(--primary-text-color)"
                  },
                  "blockClientScript": "",
                  "blockDataScript": "",
@@ -4943,7 +4951,7 @@
                  "originalElement": "",
                  "props": {},
                  "rawStyles": {
-                  "hover:background-color": "#f0f0f0",
+                  "hover:background-color": "var(--primary-color-faint)",
                   "transition-duration": ".5s"
                  },
                  "referenceBlockId": null,
@@ -5168,7 +5176,8 @@
                   "paddingLeft": "8px",
                   "paddingRight": "8px",
                   "paddingTop": "15px",
-                  "width": "150px"
+                  "width": "150px",
+                  "color": "var(--btn-color)"
                  },
                  "blockClientScript": "",
                  "blockDataScript": "",
@@ -6764,7 +6773,7 @@
                         {
                          "attributes": {},
                          "baseStyles": {
-                          "color": "rgb(0, 0, 0)",
+                          "color": "var(--primary-text-color)",
                           "display": "flex",
                           "flexDirection": "column",
                           "flexShrink": 0,
@@ -6878,7 +6887,7 @@
                         {
                          "attributes": {},
                          "baseStyles": {
-                          "color": "rgb(0, 0, 0)",
+                          "color": "var(--primary-text-color)",
                           "display": "flex",
                           "flexDirection": "column",
                           "flexShrink": 0,
@@ -7126,7 +7135,8 @@
                   "height": "60px",
                   "justifyContent": "center",
                   "padding": "14px 15px",
-                  "width": "220px"
+                  "width": "220px",
+                  "color": "var(--primary-text-color)"
                  },
                  "blockClientScript": "",
                  "blockDataScript": "",
@@ -7184,7 +7194,7 @@
                  "originalElement": "",
                  "props": {},
                  "rawStyles": {
-                  "hover:background-color": "#f0f0f0",
+                  "hover:background-color": "var(--primary-color-faint)",
                   "transition-duration": ".5s"
                  },
                  "referenceBlockId": null,
@@ -7273,7 +7283,8 @@
                 "paddingLeft": "8px",
                 "paddingRight": "8px",
                 "paddingTop": "15px",
-                "width": "150px"
+                "width": "150px",
+                "color": "var(--primary-text-color)"
                },
                "blockClientScript": "",
                "blockDataScript": "",
@@ -7283,7 +7294,7 @@
                 {
                  "attributes": {},
                  "baseStyles": {
-                  "color": "var(--btn-color)",
+                  "color": "var(--primary-text-color)",
                   "fontSize": "14px",
                   "fontWeight": "420",
                   "height": "fit-content",
@@ -7347,7 +7358,7 @@
                "props": {},
                "rawStyles": {
                 "flex-shrink": "0",
-                "hover:background": "#b2aaaa",
+                "hover:background": "var(--primary-color-light)",
                 "transition": "all 0.1s ease-out"
                },
                "referenceBlockId": null,
@@ -7371,7 +7382,8 @@
                 "paddingLeft": "8px",
                 "paddingRight": "8px",
                 "paddingTop": "15px",
-                "width": "150px"
+                "width": "150px",
+                "color": "var(--btn-color)"
                },
                "blockClientScript": "",
                "blockDataScript": "",
@@ -7548,7 +7560,7 @@
       {
        "attributes": {},
        "baseStyles": {
-        "borderColor": "#cccccc",
+        "borderColor": "var(--primary-color-faint)",
         "borderRadius": "5px",
         "borderStyle": "solid",
         "borderWidth": "1px",
@@ -11051,7 +11063,8 @@
                 "paddingLeft": "8px",
                 "paddingRight": "8px",
                 "paddingTop": "15px",
-                "width": "150px"
+                "width": "150px",
+                "color": "var(--primary-text-color)"
                },
                "blockClientScript": "",
                "blockDataScript": "",
@@ -11061,7 +11074,7 @@
                 {
                  "attributes": {},
                  "baseStyles": {
-                  "color": "var(--btn-color)",
+                  "color": "var(--primary-text-color)",
                   "fontSize": "14px",
                   "fontWeight": "420",
                   "height": "fit-content",
@@ -11125,7 +11138,7 @@
                "props": {},
                "rawStyles": {
                 "flex-shrink": "0",
-                "hover:background": "#b2aaaa",
+                "hover:background": "var(--primary-color-light)",
                 "transition": "all 0.1s ease-out"
                },
                "referenceBlockId": null,
@@ -11149,7 +11162,8 @@
                 "paddingLeft": "8px",
                 "paddingRight": "8px",
                 "paddingTop": "15px",
-                "width": "150px"
+                "width": "150px",
+                "color": "var(--btn-color)"
                },
                "blockClientScript": "",
                "blockDataScript": "",
@@ -12065,7 +12079,8 @@
               "paddingLeft": "8px",
               "paddingRight": "8px",
               "paddingTop": "15px",
-              "width": "150px"
+              "width": "150px",
+              "color": "var(--btn-color)"
              },
              "blockClientScript": "",
              "blockDataScript": "",

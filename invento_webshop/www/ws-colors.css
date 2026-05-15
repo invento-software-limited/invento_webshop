@@ -12,4 +12,6 @@
   --btn-bg: {{ btn_bg_color }};
   --btn-hover-color: {{ btn_hover_color }};
   --btn-hover-bg: {{ btn_hover_bg_color }};
+  --primary-color-faint-deep: {{ primary_color_faint_deep }};
+  --btn-anim-color: {{ btn_anim_color }};
 }
