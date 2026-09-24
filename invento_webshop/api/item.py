@@ -133,6 +133,8 @@ def get_item_details_by_route(route):
 		related_items = related_items_query.get("items", [])
 		
 		related_items = [i for i in related_items if i.item_code != item.item_code]
+		for r in related_items:
+			r["route"] = r.get("custom_route") or (f"/shop/{r.item_code}" if r.get("item_code") else "#")
 		
 		item_dict["related_items"] = related_items[:4]
 		

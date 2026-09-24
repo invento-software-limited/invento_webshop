@@ -317,6 +317,7 @@ class ProductQuery:
 			item.in_stock = True
 
 		item.item_image = item.image
+		item.route = item.get("custom_route") or (f"/shop/{item.item_code}" if item.get("item_code") else "#")
 
 		return item
 
