@@ -1137,8 +1137,15 @@ def create_user(data):
         "mobile_no": data.get('mobile_no'),
         "enabled": 1,
         "user_type": "Website User",
+        "send_welcome_email": 0,
         "new_password": password
     })
+
+    # Skip the welcome mail outright: guest checkout must not fail because
+    # the site's outgoing Email Account is broken (see User.send_password_notification,
+    # which only catches frappe.OutgoingEmailError, not the ValidationError that
+    # get_password() raises when an Email Account's stored password is missing).
+    user.flags.no_welcome_mail = True
 
     # Insert the user document
     user.insert(ignore_permissions=True)
