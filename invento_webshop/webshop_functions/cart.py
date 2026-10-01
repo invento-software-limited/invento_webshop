@@ -7,6 +7,7 @@ from frappe.utils import cint, cstr, flt, get_fullname
 from frappe.utils.nestedset import get_root_of
 from erpnext.selling.doctype.quotation.quotation import _make_sales_order
 from invento_webshop.api.shipping import calculate_cost
+from invento_webshop.webshop_functions.checkout_auth import user_exists
 
 
 def _get_cart_quotation(party=None, contact=None):
@@ -592,6 +593,9 @@ def update_cart_address(address_type, address_name, quotation=None):
 def place_order(doc=None, cart_items=None):
     if frappe.session.user == "Guest" and doc:
         doc = frappe.parse_json(doc)
+        if user_exists(doc.get("email_id")):
+            # Don't dead-end the order: tell the page to offer log in / forgot password.
+            return {"account_exists": True, "email": doc.get("email_id")}
         create_user(data=doc)
         first_name = doc.get("first_name", "")
         last_name = doc.get("last_name", "")
@@ -609,6 +613,13 @@ def place_order(doc=None, cart_items=None):
         if party:
             contact = create_contact(doc, party.name)
             quotation = _get_cart_quotation(party=party, contact=contact)
+
+            # Items must be on the quotation before any address update saves it:
+            # saving a brand-new item-less quotation fails in ERPNext (grand total is None).
+            cart_items = frappe.parse_json(cart_items) if cart_items else []
+            if cart_items:
+                add_items_to_quotation(quotation, cart_items)
+
             if address:
                 update_address_with_customer(address.name, party.name)
                 update_cart_address(address_type=address.address_type, address_name=address.name,
@@ -649,9 +660,6 @@ def place_order(doc=None, cart_items=None):
                 else:
                     frappe.throw(_("Failed to create the delivery address."))
 
-            cart_items = frappe.parse_json(cart_items) if cart_items else []
-            if cart_items:
-                add_items_to_quotation(quotation, cart_items)
 
     else:
         quotation = _get_cart_quotation()
@@ -703,9 +711,19 @@ def place_order(doc=None, cart_items=None):
         frappe.local.cookie_manager.delete_cookie("cart_count")
         frappe.local.cookie_manager.delete_cookie("cart_total")
 
+    currency = frappe.db.get_single_value("Global Defaults", "default_currency")
     return {
         "name": sales_order.name,
-        "items": sales_order.items
+        "items": [
+            {
+                "item_code": item.item_code,
+                "item_name": item.item_name,
+                "image": item.image or "",
+                "qty": item.qty,
+                "amount": frappe.utils.fmt_money(item.amount, currency=currency),
+            }
+            for item in sales_order.items
+        ],
     }
 
 def create_party(doc):

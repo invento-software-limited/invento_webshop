@@ -6,15 +6,8 @@ from invento_webshop.webshop_functions.cart import get_party
 
 
 def _can_see_price():
-	"""Return True if the current user is allowed to see prices."""
-	if frappe.session.user != "Guest":
-		return True
-	cached = frappe.cache.get_value("ws-price-settings")
-	if cached is not None:
-		return cached
-	result = bool(cint(frappe.db.get_single_value("Webshop Settings", "show_price_for_guest")))
-	frappe.cache.set_value("ws-price-settings", result, expires_in_sec=300)
-	return result
+	"""Prices are public: guests and logged-in users both see them."""
+	return True
 
 @frappe.whitelist(allow_guest=True)
 def get_filtered_items(filters=None):
