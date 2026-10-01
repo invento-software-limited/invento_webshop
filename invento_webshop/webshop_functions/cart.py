@@ -1147,6 +1147,12 @@ def create_user(data):
     # get_password() raises when an Email Account's stored password is missing).
     user.flags.no_welcome_mail = True
 
+    # Skip Frappe's core password-strength scoring (zxcvbn): it raises frappe.throw
+    # on a weak-looking password, which was silently aborting the whole order (rendered
+    # to the customer as a generic desk-style "Warning" popup). The 8-char minimum
+    # above is this checkout's own policy; don't also enforce the desk's stricter one.
+    user.flags.ignore_password_policy = True
+
     # Insert the user document
     user.insert(ignore_permissions=True)
     frappe.db.commit()

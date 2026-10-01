@@ -1,0 +1,12 @@
+/* Write your CSS here */
+/* Write your CSS here */
+.is-active {
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.is-active p {
+  color: var(--primary-text-color);
+}

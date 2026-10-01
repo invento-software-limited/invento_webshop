@@ -1,8 +1,16 @@
 {
+ "creation": "2026-09-29 12:08:23.252147",
  "dark_value": null,
- "doctype": "Builder Variable",
+ "docstatus": 0,
+ "doctype": "Builder Token",
+ "group": null,
+ "idx": 0,
+ "is_standard": 0,
+ "modified": "2026-09-28 05:43:48.944002",
+ "modified_by": "Administrator",
  "name": "gray-600",
+ "owner": "Administrator",
+ "token_name": "gray-600",
  "type": "Color",
- "value": "#7C7C7C",
- "variable_name": "gray-600"
+ "value": "#7C7C7C"
 }

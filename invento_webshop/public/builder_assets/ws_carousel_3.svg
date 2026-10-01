@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 891" font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#BE185D"/>
-      <stop offset="55%" stop-color="#DB2777"/>
-      <stop offset="100%" stop-color="#BE185D"/>
+      <stop offset="0%" stop-color="#181B40"/>
+      <stop offset="55%" stop-color="#262C66"/>
+      <stop offset="100%" stop-color="#181B40"/>
     </linearGradient>
     <linearGradient id="box" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="rgba(255,255,255,0.24)"/>
@@ -40,5 +40,5 @@
   <text x="405" y="731" font-size="14" fill="rgba(255,255,255,0.92)" text-anchor="middle">&#10003;  Secure checkout &#38; easy returns</text>
   <rect x="180" y="762" width="450" height="52" rx="12" fill="rgba(255,255,255,0.10)"/>
   <text x="405" y="793" font-size="14" fill="rgba(255,255,255,0.92)" text-anchor="middle">&#10003;  Fast delivery to your door</text>
-  <text x="405" y="852" font-size="18" fill="#FDF2F8" text-anchor="middle">&#9733;&#9733;&#9733;&#9733;&#9733;  4.9 / 5  &#183;  2,000+ customers</text>
+  <text x="405" y="852" font-size="18" fill="#E8E8EC" text-anchor="middle">&#9733;&#9733;&#9733;&#9733;&#9733;  4.9 / 5  &#183;  2,000+ customers</text>
 </svg>
