@@ -962,6 +962,14 @@ def _apply_shipping_rule(party=None, quotation=None):
                 # Default to the first one if none selected
                 quotation.shipping_rule = methods[0]["name"]
 
+    if not quotation.shipping_rule:
+        # Fall back to the default rule; with none configured the order simply has no shipping rule.
+        quotation.shipping_rule = frappe.db.get_value(
+            "Shipping Rule",
+            {"custom_is_default": 1, "disabled": 0, "shipping_rule_type": "Selling"},
+            "name",
+        )
+
     if quotation.shipping_rule:
         rule_doc = frappe.get_doc("Shipping Rule", quotation.shipping_rule)
         net_total = flt(quotation.total)
